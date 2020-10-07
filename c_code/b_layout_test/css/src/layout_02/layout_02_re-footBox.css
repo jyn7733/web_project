@@ -1,0 +1,18 @@
+/* footBox.css*/
+#footBox{ margin-bottom: 500px;
+  height: auto; padding: 25px 0 30px;  
+  background-color: #ccc;
+}
+.foot_outer{ 
+  width: 1300px; height: 140px; margin: auto;
+  background-color: var(--step2-color
+  );}
+  .foot_con_01{
+    float: left; width: 750px; height: 140px;
+    background-color: #f9f;
+  }
+  .foot_con_02{
+   float: right; width: 260px; height: 76px;
+    background-color: #f9f;
+    margin-top: 32px;
+  }

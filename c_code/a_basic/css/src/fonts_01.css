@@ -1,0 +1,72 @@
+/* font_01.css */
+
+
+/* @font-face 서체정의 */
+@font-face { font-family: 'UhBeeMiMi'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeMiMi.woff') format('woff'); 
+  font-weight: normal; font-style: normal; }
+
+  /** 웹에서 이해가능한 서체확장자 
+      1. eot - IE하위버전용
+      2. woff - 대부분 브라우저
+      3. woff2...
+
+      * @font-face 영역은 사용할 서체에 관해 직접 내용을 설정/정의 하는 곳으로 굵기, 기울기, 서체명을 번경 할 수 있다
+  */
+
+/* font에 대한 설명 */
+.part{
+  width: 800px; height: auto; padding: 16px; padding-left:30px;
+  background-color: #fcd;
+}
+
+h3{
+  width: 300px; height: 50px; line-height: 50px;
+  text-align: center; background-color: #fff;
+}
+
+ul {width: 100%; height: auto;}
+.fonts_01 ul li{list-style:decimal}
+
+.fonts_01 li:nth-child(1){ font-style: italic;}
+.fonts_01 li:nth-child(2){ font-weight: 900;}
+.fonts_01 li:nth-child(3){ font-size: 16pt;}
+.fonts_01 li:nth-child(4){ background-color: #ff0; line-height: 300%;}
+.fonts_01 li:nth-child(5){ font-family: 'malgun Gothic', '돋움';}
+.fonts_01 li:nth-child(6){ font-family: 'apple SD gothic','myriad pro',arial,'malgun Gothic',serif; }
+.fonts_01 li:nth-child(7){ font-family: 'Sansita Swashed','Black Han Sans',sans-serif; }
+  .fonts_01 li:nth-child(7) span:nth-of-type(1){ font-weight: 300; color:#fff }
+  .fonts_01 li:nth-child(7) span:nth-of-type(2){ font-weight: 400; color:#f88 }
+  .fonts_01 li:nth-child(7) span:nth-of-type(3){ font-weight: 700; color:#088 }
+.fonts_01 li:nth-child(8){text-indent: -20px;}
+.fonts_01 li:nth-child(9):first-letter{ font-family: 'UhBeeMiMi'; color:#f06; font-size: 2rem;}
+.fonts_01 li:nth-child(10){ word-spacing: -10px;}
+.fonts_01 li:nth-child(10):first-line { color:#fff; text-shadow: 0 0 5px #555;}
+
+/**font
+1. font-style 기울기를 설정하는 것으로 nomal | italic
+
+2. font-weight 굵기를 설정하는 것으로 nomal (400) |lighter (200) | light(300) | bold(600) | bolder (800) | black (900)...
+
+3. font-size는 서체의 크기를 의미 (%,px,pt,em,rem)
+
+4. line-height 줄간격을 의미, 첫 줄 부터 적용이되며, 
+    해당 높이  값의 가운데 배치가 된다.
+
+5. font-family 서체의 종류를 임력하며 띄어쓰기, 특수글자는 "" 
+    감싸처리 하며 우선순위의 서체를 먼저 작성
+    우선순위의 서체를 먼저 작성 후 ','로 구분하여 다음 서체를 선정
+6. font-family 서체의 종류를 선택하는 기능일때, 우선순위를 
+    명확하게 지정해야한다.
+    단, 순서상 한글관련 서체보다 영문 관련 서체를 먼저 써야지
+    한글이 서체가 적용됨
+
+ 7. font-face를 이용하여 사용하는 webFont는 내 컴퓨터에 저장되어있는 서체 대신, 별도의 관리하는 공간에서 쓰도록 처리된 기술  
+ 
+ 8. text-indent 첫줄 들여쓰기로 -값을 사용하면 왼쪽으로 이동한다.
+
+ 9. letter-spacing 기본은 0 간견을 줄일때는 -값, 넓게 할 경우 수치를 높으면 된다.
+
+ 10. word-spacing 기본은 0 간견을 줄일때는 -값, 넓게 할 경우 수치를 높으면 된다.
+
+*/

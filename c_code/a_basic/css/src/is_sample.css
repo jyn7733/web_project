@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* is_sample.css */
+
+#wrap{
+  width:900px; height:900px; margin: auto;
+  background-color: #eee;
+}
+.is{list-style: none;
+  width: 100%; height:auto; background-color: #ddd;}
+.is li{ float: left; margin: 10px;
+  width: 76px; height: 77px;}
+.is a{display: block; width: 100%; height: 100%;}
+.is li a{
+  background-image: url("../img/background_exam/ikonate2.png");
+  background-repeat: no-repeat; border-radius: 10px;
+}
+.is li a:hover,
+.is li a:focus{
+  background-image: url("../img/background_exam/ikonate2_black.png");
+  background-repeat: no-repeat; border-radius: 10px;
+}
+
+.is li span{ display: block; width: 0; height: 0; overflow: hidden;}
+.is li:nth-child(1) a{background-position: -266PX -11PX;}
+.is li:nth-child(2) a{background-position: -475px -11px;}
+.is li:nth-child(3) a{background-position: -684px -11px;}
+.is li:nth-child(4) a{background-position: -371px -325px;}
+.is li:nth-child(5) a{background-position: -579px -430px;}
+.is li:nth-child(6) a{background-position: -688px -429px;}
+.is li:nth-child(7) a{background-position: -996px -327px;}
+
+
+
+

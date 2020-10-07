@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* float.css */
+
+#wrap{
+  width: 800px; height:2000px;
+  background-color: #ddd;
+  margin: auto;
+}
+
+/* -------------------------------------------- */
+
+.float_01{
+  width: 100%; height:400px;
+  background-color: #ccf;
+}
+
+.sample_01{
+  width: 90%; height:350px;
+  margin: auto; border: 1px solid #333;
+  overflow-x:hidden; overflow-y:scroll;
+}
+
+.img_sam{float:left; margin: 10px;
+  width:150px; height:150px;
+}
+
+.img_sam > img{
+  width:100%; height:100%;
+  border:none;
+}
+
+.img_sam > p{
+  width:100%; height:100%;
+  background-color:#fc7;
+  margin: 0;
+}
+
+/* -------------------------------------------- */
+
+.float_02{
+  width: 100%; height:250px;
+  background-color: #ccf;
+}
+
+.sample_02{
+  width: 90%; height: 200px;
+  border:1px solid #333;
+}
+.sample_02 > div{
+  width: 100px; height: 70px;
+  border:2px solid #fa0;
+}
+.fl_01{background-color: #fca;}
+.fl_02{background-color: #adf;}
+.fl_03{background-color: #faf;}
+.fl_04{background-color: #afc;}
+
+.sample_02 > div:nth-of-type(1) {float:left;}
+.sample_02 > div:nth-of-type(2) {float:left;}
+.sample_02 > div:nth-of-type(3) {float:left;}
+.sample_02 > div:nth-of-type(4) {float:left;}
+
+/* float left와 right는 앞에 쓰인 형제 옆으로 배치된다. */
+/* -------------------------------------------- */
+
+.float_03{
+  width: 100%; height: 300px;
+  background-color: #ffc;
+}
+.sample_03{
+  width: 90%; height: 250px;
+  border: 1px solid #333;
+}
+.sample_03> ul{ float: right;
+  list-style: none;
+  width: auto; height: 50px; background-color: #fff;
+  margin: 0; padding: 0;
+}
+.sample_03 li{ float: left;
+  width: 76px; height: 48px; border:2px solid #777;
+}
+
+/* -------------------------------------------- */
+
+.float_04{
+  width: 100%; height: 700px; background-color: #dda;
+}
+.sample_04{
+  width: 100%; height: 650px;
+  border: 1px solid #333;
+}
+
+.sample_04 > div{
+  width: 200px; height: 50px;
+  text-align: center; line-height: 50px;
+  border: 2px solid #0ac;
+}
+
+.fl_02_01{ float:left;
+  background-color:#309FF1}
+.fl_02_02{ float:left;
+  background-color:#DB078D}
+.fl_02_03{ float:left;
+  background-color:#4DEA02}
+.fl_02_04{ float:left;
+  background-color:#540D84}
+.fl_02_05{ float:left;
+  background-color:#20BA0D}
+.fl_02_06{ clear: left;
+  background-color:#D0E64B}
+
+  /* 옆으로 이어지다가 하나만 아래로  떨구고 싶을 때 clear:left 를 사용하면
+  위의 형제들 기준으로 float의 기능을 끝낸 것. */
+  /* clea:both는 꼭 끝에 들어가야 하는 것은 아니나, 중간에 넣을 경우
+  코드가 복잡해질 수 있다. */
+
+.fl_02_07{ float:left; margin-top: 20px;
+  background-color:#3E85FF}
+.fl_02_08{ float:left;margin-top: 20px;
+  background-color:#7E0C65}
+.fl_02_09{ float:left;margin-top: 20px;
+  background-color:#88B06E}
+.fl_02_10{ float:left;
+  background-color:#F86F01}
+.fl_02_11{ float:left;
+  background-color:#3FA50F}
+.fl_02_12{ float:left;
+  background-color:#914DC9}
+
+  /* -------------------------------------------- */
+
+  .float_05{
+    width: 100%; height: 1000px;
+    background-color: #acf;
+  }
+
+  .sample_05{
+    width: 600px; height: auto;
+    border:2px solid #555;
+  }
+    .sample_05 > div{ float: left;
+      width: 300px; height: 100px;
+    }
+  .sam_01{background-color: #461EF1;}
+  .sam_02{background-color: #B5A0D4;}
+  .sam_03{background-color: #C2C139;}
+  .sam_04{background-color: #FDA83D;}
+  .sam_05{background-color: #573C3A;}
+  .sam_06{background-color: #B838B0;}
+ 
+  .sample_05::after{
+    content:" "; display: block; clear: both;
+  }
+  .sample_06{
+    width: 100%; height: 100px;
+    color:#fff;
+    background-color: #f53;
+  }
+
+  /* 
+  float이란? 선택된 요소를 다른 요소와 비교처리하여,
+  1. 뒤에 다른 요소를 담아서 글자를 주변에 위치하도록 처리하거나,
+  2. 여개의 형제요소에 같이 사용하여, 옆으로 나란이 붙이도록 처리하거나.
+  3. 떄로는 float처리되어 이를 강제로 취소 처리(float:none;)하거나,
+  4. 여러개의 float처리된 요소들의 마지막에 float종료의 의미를 부여(clear:both)
+  5. float요소를 담으면, inline 또는 inline-block요소들은 모두 block으로 강제 변환된다.
+   */

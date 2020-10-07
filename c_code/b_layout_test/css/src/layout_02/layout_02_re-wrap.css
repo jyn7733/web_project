@@ -1,0 +1,11 @@
+/* wrap.css */
+
+#wrap > div{
+  width: 100%;
+}
+
+/* desing */
+#wrap{
+  width:100%; height:auto; min-height:500px;
+  margin: auto;
+}

@@ -1,0 +1,56 @@
+/* fonts_02.css */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+@import url('../../fonts/noto_sans/noto_sans.css');
+/* import로 불러올 때 많이 불러오게 되면 용량이 커서 느려짐
+  web에서 폰트를 불러오는 경우 2가지 이상 불러오지 않는 것이 좋음
+*/
+
+@font-face { 
+  font-family: 'MapoFlowerIsland'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff'); font-weight: normal; 
+  font-style: normal; 
+}
+
+#wrap{
+  width: 80%; min-width: 700px; height: auto;  min-height: 400px;
+  margin: auto; background-color: #ddd;
+}
+
+.part{
+  width: 90%; height: auto;
+  margin: 10px auto; padding: 30px; box-sizing: border-box;
+  border: 2px solid #777; border-left-width: 0; border-right-width:0; 
+}
+
+/* --------------------------------- */
+.google_font p{ font-family: 'Pacifico','Dokdo', cursive;}
+.noonu_font p { font-family: 'MapoFlowerIsland';}
+.notoSansKR p {font-family: '궁서';}
+.notoSansKR span{ 
+  font-family: notoSansKR;
+  font-weight: 600;
+}
+
+/* ------------------------------- */
+.other { background-color: #fff;}
+.other ul { width: 100%; height: 100%;}
+.other li {width: 200px; height: 20px; margin-bottom: 2.5rem; border:1px solid #333;}
+
+.other li:nth-child(1) { white-space: nowrap;} /*nowrap 은 넘어가는 글씨를 한줄로 만드는것*/
+.other li:nth-child(2) { word-break: keep-all;} 
+.other li:nth-child(3) { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.other li:nth-child(4) { text-transform: capitalize;}
+.other li:nth-child(5) { width: 100%; white-space: nowrap;}
+
+/* 
+*text-overflow는 넘치는 영역을 말줄임표시의 여부를 체크한느 기능
+
+조건 1. white-space:nowrap;
+     2. 감싸는 영역이 사이즈를 가질 것 (block)
+     3. 감싸는 영역을 넘칠경우 숨긴 (overflow:hidden;)
+     4. text-overflow: ellipsis;
+*/
+/* 
+text-transform: capitalize; 첫 글자만 대문자로.
+*/

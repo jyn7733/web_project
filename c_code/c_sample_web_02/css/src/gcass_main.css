@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* gcass_main.css */
+
+/* reset.css */
+html,body{margin: 0;}
+h1,h2,h3,h4,h5,h6{margin: 0;}
+ul,ol,dl,dt,dd,li{ margin: 0; padding: 0; list-style: none;}
+a{color: inherit; text-decoration: none;}
+/* common.css */
+.clearfix:after,
+.clearfix::after{content: " "; display: block; clear: both;}
+
+/* desing */
+#wrap{ position: relative;
+  width:  980px; height:auto; min-height: 850px;
+  margin: auto; background-color: #ddd;
+}
+
+#sideBox{
+  position: absolute; top: 0;
+  width: 100%; height: 30px;
+  background-color: #ccc;
+}
+#sideBox > ul{ float: right;
+  width: 436px; height: 30px;
+}
+.side_home{  float:left; 
+  width: 96px; height: 30px;
+  background-color: #aaa;
+}
+.side_study{  float:left; 
+  width: 96px; height: 30px;
+  background-color: #777;
+}
+.side_education{  float:left;
+  width: 244px; height:30px;
+  background-color: #ee0;
+}
+
+
+#sideBox h3{
+  font-size: 1rem;
+  margin: auto; margin-left: 10px;
+}
+
+
+#headBox{ float: left;
+  width: 249px; height: 740px;
+  background-color: #eee;
+}
+h1{
+  width: 158px; height: 112px; margin: 50px 40px 35px 40px;
+  background-color: #777;
+}
+
+#gnbBox{
+  width:158px; height:410px;
+  margin-left: 40px;
+  background-color: #999;
+}
+
+#gnbBox > ul{
+  width: 100%; height: 100%;
+}
+
+#gnbBox li{
+  width: 100%; height: 40px;
+  margin-bottom: 24px;
+  background-color: #666;
+ 
+}
+#gnbBox li:nth-of-type(5){
+  margin-bottom: 10px;
+}
+#gnbBox li:last-child{
+  width: 100%; height: 110px;
+  margin-bottom: 0;
+}
+
+#viewBox{ float: left;
+  width: 731px; height: 740px;
+  background-color: #888;
+}
+.view_img_box{ position: relative;
+  width: 100%; height: 100%;
+}
+.viewBox_img{
+  position: absolute; top: 120px; left: 80px;
+  width:312px; height: 547px;
+  background-color: #e87;
+}
+.viewBox_img_02{
+  position: absolute; top: 80px; right: 45px;
+  width:342px; height: 558px;
+  background-color: #ee9;
+}
+#footBox:after,
+#footBox::after{
+  content: " "; display: block; position: absolute; top:0; left: 0; z-index: 200;
+  width: 100%; height: 1px; background-color: #333;
+}
+#footBox{ float: left; position: relative;
+  width: 100%; height: 110px;
+  background-color: #666;
+}
+  .logo_info{ float: left;
+    margin: 20px 15px 0 40px;
+    width:84px; height:65px; 
+    background-color: #aaa;
+  }
+  .sns_icon{float: left;
+    margin-top: 20px; margin-right: 15px;
+    width: 45px; height: 40px;
+    background-color: #aaa;
+  }
+  .location_icon{float: left;
+    margin-top: 20px; margin-right: 15px;
+    width: 45px; height: 40px;
+    background-color: #aaa;
+  }
+  .info_text_area{float: left;
+    margin-top: 20px;
+    width: 390px; height: 40px;
+    background-color: #aaa;
+
+  }
+  .family_site{ float: right;
+    position: relative; top: -40px; right: 40px;
+    width: 300px; height:105px;
+    background-color: #999;
+  }

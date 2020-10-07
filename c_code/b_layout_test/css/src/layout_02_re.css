@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* layout_02_re.css */
+/* desing.css */
+
+/* @import url(); : css에서 다른 css파일을 불러오는 기법
+                    단, 해당 명령어를 입력하기 전 다른 디자인 명령어가 들어가면
+                    해당 명령어는 듣지 않기 때문에 가장 먼저 써야함 */
+
+@import url(./layout_02/layout_02_re-wrap.css);
+@import url(./layout_02/layout_02_re-headBox.css);
+@import url(./layout_02/layout_02_re-adViewBox.css);
+@import url(./layout_02/layout_02_re-localVavBox.css);
+@import url(./layout_02/layout_02_re-content_area.css);
+@import url(./layout_02/layout_02_re-miniAdBox.css);
+@import url(./layout_02/layout_02_re-footBox.css);
+
+
+
+
+

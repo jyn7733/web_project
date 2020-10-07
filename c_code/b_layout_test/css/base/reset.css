@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* reset.css */
+
+/* reset.css: 웹페이지 작업을 위해 매번 처리해야하는 번거로운 작업을 미리 설정하여 초기화 시키는 처리 */
+
+html, body{margin:0;}
+h1, h2, h3, h4, h5, h6, p, div{
+  margin:0; padding: 0;
+}
+ul, ol, li, dl, dt, dd{ margin: 0; padding: 0; list-style: none;}
+button{ border:none; background-color: transparent; cursor: pointer; padding: 0; margin: 0;}
+a { text-decoration: none; color:inherit; }

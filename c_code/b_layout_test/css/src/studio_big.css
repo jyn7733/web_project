@@ -1,0 +1,58 @@
+/* studio_big.css */
+
+/* wrap.css */
+
+#wrap{
+  width: 1600px; height: auto; background-color: #ddd;
+  margin: auto;
+}
+
+/* headBox.css */
+#headBox{ position: relative;
+  margin: auto;
+   width: 100%; height: 80px; 
+  background-color: #eed;
+}
+.main_heading{ 
+  position: absolute; top:20px; left:150px; margin: auto;
+  /* float: left; margin-top: 20px; */
+width: 300px; height: 40px; background-color: #888}
+.navigation{ 
+  position: absolute; top: 20px; right: 150px; margin: auto;
+  width: 710px; height: 40px; 
+  background-color: #ccc; 
+}
+.navigation > ul{
+  width: 100%; height:auto;
+}
+.navigation li{ float: left; width: 90px; height: 20px;
+  margin-top:10px; margin-left: 10px;
+background-color: #0ee;}
+
+/* viewBox.css */
+#viewBox{ 
+  width: 100%; height: 510px; 
+  background-color: #eee;}
+/* bestBox.css */
+#bestBox{
+  width: 100%; height:530px; 
+  background-color: #ddd;}
+/* recentBox.css */
+#recentBox{
+  width: 100%; height:880px; 
+  background-color: #eee;}
+/* artworksBox */
+#artworksBox{
+  width: 100%; height:440px;
+  background-color: #ddd;}
+
+/* officialBox */
+#officialBox{
+  width: 100%; height: 1220px;
+  background-color: #eee;
+}
+/* footBox */
+#footBox{
+  width: 100%; height: 360px;
+  background-color: #555;
+}

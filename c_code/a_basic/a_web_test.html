@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>첫번째 웹 문서 만들기</title>
+    <style>
+      /* 얘는 css에서 주석달때 쓰는 거야 알겠지?^^*/
+      body { background-color: #aff; }
+      p { background-color: blue; color: white; }
+      .p_text { font-size: 2rem; }
+      div { width:100px; height:200px; background-color:salmon; margin-bottom:5px; }
+      #box { border-radius: 40px; }
+      .one { text-decoration: underline; }
+      .two { text-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.5); }
+    </style>
+  </head>
+  <body>
+    <h1>웹문서 처음으로 만들어보기!</h1>
+    <p class="p_text one two">
+    <!-- class는 위와 같은 형식으로도 사용할 수 있음(공백의 경우 각각의 class로 인식) -->
+     웹문서를 처음으로 만들어 보았다.<br />
+     나름 재미?? 있나요??
+    </p>
+    <p class="p_text">
+      웹문서 신기하네요 재미있어요<br />
+      아마도...요....
+    </p>
+    <div id="box"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      
+      <script>
+      /*  // 한줄 주석으로 줄바꿈 되면, 주석이 자동으로 풀림
+         /*여러줄 주석
+          추가 설명이 가능*/                                         */
+        
+        var myP = document.getElementsByTagName('p')[0];
+  
+          myP.addEventListener('click',function(){
+           myP.style.backgroundColor = "#000";
+             });
+        
+      </script> <!-- 자바스크립트를 사용가능 하게 해주는 태그 -->
+  </body>
+</html>
+
+

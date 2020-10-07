@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    p {color:#03a; background-color: #cdd;}
+    .on:hover{color: #f03; background-color: #fdc;}
+    .push:hover{color: #f03; background-color: #fdc;}
+    .push:active{color: #0a0; background-color: #dfc;}
+
+    .visit:visited {color:#171717;}
+    .box{color:#0a0;}
+    span{color:#f03;}
+    a{color:inherit;}
+    /*inherit 는 부모의 속상을 따라가는 것*/
+    div,ul,li,span{ margin: 0; padding:0; list-style:none; display: block;}
+    .box {width: 500px; height: 200px; background-color:#facf;}
+    ol{width: 80%; height: 200px; background-color:#acf}
+    li{width: inherit; height: 200px; background-color:#afc}
+    span{width: inherit; height: 200px; background-color:#fa7}
+  </style>
+</head>
+<body>
+  <H2>의사전달코드 이해하기</H2>
+  <p>가상의 의사를 표현할 수 있는 형태를 만드는 것</p>
+  <P class="on">가상의 코드로 마우스를 올렸을 경우</P>
+  <P class="push">가상의 코드로 마우스로 누르고 있는 경우</P>
+  <P><a href="http://serveone.co.kr" class="visit">lg 서브원</a></P>
+  
+  <div class="box">
+    <ol>
+      <li>
+        <span>
+          <a href="#">
+            링크 글씨를 작성
+          </a>
+          <br />
+          글씨를 작성
+        </span>
+      </li>
+    </ol>
+  </div>
+</body>
+</html>

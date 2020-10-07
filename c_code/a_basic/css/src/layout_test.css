@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* layout.css */
+
+.box{
+  width: 936px; height: 468px;
+  background-color: #08f;
+}
+.title_wrap{
+  float: left;  width: 306px; height: 306px;
+  margin: 3px;
+  background-color: #f59;
+}
+.title_wrap h2{
+  margin: 50px 20px 0 20px;
+}
+.title_wrap p{
+  margin: 0 20px 50px 20px;
+}
+.box ul{
+  margin: 0; padding: 0;
+  list-style: none;
+}
+.box li{
+  float: left; width: 150px; height: 150px;
+  margin: 3px;
+  text-align: center;
+  background-color: #f59;
+}
+.box li:nth-child(4){
+ float: right; height: 306px;
+}
+.box a {
+  text-decoration: none;
+  color:#444; text-align: center;
+  line-height: 150px; font-size: 1.5rem;
+}

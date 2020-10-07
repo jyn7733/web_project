@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- position_02.html -->
+<html lang="ko-kr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../fonts/fontsasome/css/all.css">
+  <link rel="stylesheet" href="../css/src/position_02.css">
+  <title>Document</title>
+<link rel="shortcut icon" href="../img/icon_01.png" type="image/png">
+<link rel="apple-touch-icon" href="../img/icon_01.png">
+</head>
+<body>
+  <div id="wrap">
+    <div id="headBox">
+      <h1><a href="./contents.html">웹기초</a></h1>
+    </div>
+    <div id="sideBox">
+      <div class="sample_fixed">한쪽으로 치우쳐져있는 요소의 위치</div>
+    </div>
+    <div class="modal_window">
+      <div class="modal_message">
+      <h3>message</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio expedita illo aspernatur cum amet repellendus. </p>
+      </div>
+    </div>
+    <div class="side">우측에 붙이기</div>
+    
+    <div id="viewBox">
+      <h2>광고영역</h2>
+      <div class="view_indicator"></div>
+      <div class="view_btn">
+      <button class="next_btn" type="button">
+        <span class="hidden">다음</span>
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <button class="prev_btn" type="button">
+        <span class="hidden">이전</span>
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      </div>
+
+      <div class="view_area">
+        <div class="adv_01">
+          <!-- <img src="../img/guillaume-galtier-3YrppYQPoCI-unsplash.jpg" art="광고이미지"> -->
+        </div>
+        <div class="adv_02"></div>
+        <div class="adv_03"></div>
+        <div class="adv_04"></div>
+        <div class="adv_05"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="http://unpkg.com/jquery"></script>
+  <script> 
+   // console.log($.fn)
+  //  $('.modal_message').on('click', function(){
+  //     $('.modal_window').slideUp(300);  
+  //  });
+
+  var msg = document.getElementsByClassName('modal_message')[0];
+  var mwn = document.getElementsByClassName('modal_window')[0];
+
+  msg.addEventListener('click', function(){
+    mwn.style.display = 'none';
+  });
+  </script>
+</body>
+</html>

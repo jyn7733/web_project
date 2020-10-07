@@ -1,0 +1,145 @@
+/* @charset "utf-8"; */
+/* layout_1.css */
+
+#wrap{
+  width: 600px; height: auto; min-height: 500px; margin: auto;
+}
+/* #header ======================== */
+#header{
+  /* width: calc(100% - 20px);*/ 
+  width: 100%; height: auto;
+  padding: 10px; box-sizing: border-box; 
+  background-color: #f07;
+}
+
+/* 
+  box-sizing: border-box;
+
+ */
+
+h1{ float: left;
+  width: 120px; height:100px; 
+  background-color: #ccc;}
+h1 a{
+  display: block; width: 100%; height: 100%;
+  font-size: 1rem;
+}
+.navigation{float: right;
+  width: 400px; height: 100px;
+}
+
+  .navigation ul{
+    width:100%; height:100%;
+    list-style: none; 
+    margin: 0; padding: 0;
+  }
+
+/* ul에는 기본으로 마진과 패딩이 적용되기 때문에 이를 없애주는 작업을 해줘야 한다. */
+
+  .navigation ul li{float: left; width: 60px; height: 100%;
+  background-color: #fac; margin-right: 8px;}
+  .navigation ul li:nth-child(2n){background-color: #0ac;}
+  .navigation ul li:last-child{margin-right: 0;}
+  .navigation a { display: block; width: 100%; height: 100%;}
+/* #header:after,
+#header::after{
+  content: " "; display: block; clear: both;
+} */
+
+/* common.css : 공통의 class이름을 부여하여, 
+반복사용되는 형태를  이름을
+기입함으로 인하여 빠르고 쉽게 
+웹페이지를 구성하도록 처리하는 기능
+ */
+
+.hidden {
+  width: 0; height: 0; overflow: hidden;
+}
+.clearfix:after,
+.clearfix::after {
+    content:" "; display: block; clear: both; 
+  }
+/* ------------------------------------------------- */
+
+/* #section ======================== */
+#section{
+  width: 100%; height: 300px;
+}
+  #section >div {
+    float: left; height: 300px;
+  }
+  .sect_01{
+    width:40%;  background-color:#329664; 
+  }
+  .sect_02{
+    width:60%;  background-color:#555; 
+  }
+
+/* #aside ======================== */
+  #aside {
+    width: 100%; height: 300px;
+  }
+  /* #aside  h2{
+    width: 0; height: 0; overflow: hidden;
+  } */
+ .aside_base_1{
+    float:left; height: 300px; width: 33.333333%;
+  }
+    .aside_base_1.side_01{
+     background-color: #adaadd;
+    }
+    .aside_base_1.side_02{
+    width: 33.333334%; background-color:#607259 ;
+    }
+    .aside_base_1.side_03{
+      background-color:#ad6fdd ;
+    }
+    /* ? {float:기능을 제거하는 명령어 -> clear:both} */
+
+  
+/* #article ======================== */
+    #article{
+      width: 100%; height: auto; 
+    }
+    /* #article > h2{
+      width: 0; height: 0; overflow: hidden;
+    } */
+    .art_base_1{
+      float:left; width: 70%; height: 150px;
+    }
+
+      .art_base_1.art_01{
+      width: 30%; height: 300px; background-color: #27294d;
+    }
+      .art_base_1.art_02{
+        background-color: #ff7259; 
+    }
+      .art_base_1.art_03{
+        background-color: #ad6fdd;
+      }
+    /* .art_base_1.art_01 
+    같은 클래스를 쓸 경우 띄어쓰기를 하게 되면 자손선택자로 선택이 되기 때문에 붙여서 써야한다. */
+    
+/* #content ======================== */
+    #content {
+      width: 100%; height: auto;
+    }
+    /* #content > h2{
+      width: 0; height: 0; overflow: hidden;
+    } */
+    .con_base_1{
+       float:  left; width: 70%;
+     }
+    .con_base_1.art_02 {height: 150px; background-color: #ff7259; }
+    .con_base_1.art_03 { height: 350px; background-color: #ad6fdd; }
+    .con_base_1.art_01 { width: 30%; height: 500px; background-color: #27294d; margin-top: -150px;}
+
+    /* 컴퓨터는 코드를 읽을 때 순서대로 읽기 때문에 art_01이 먼저 쓰여져 있으면 순서대로 읽다가 오류가 발생할 수 있기 때문에 코딩을 할때 읽혀짐에 문제가 생기지 않도록 코딩순서를 배치 해야한다. 
+    
+    float 또한 왼쪽에서 오른쪽으로 읽어가기 때문에 right보다 left를 써주고 마지막 아래로 떨어진 요소의 margin을 조절하여 맞춰줘야 한다.
+    */
+
+/* #footer ======================== */
+#footer{
+  width: 100%; height: 100px; background-color:#03f;
+}

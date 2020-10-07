@@ -1,0 +1,83 @@
+/* adViewBox.css */
+
+#adViewBox{ position: relative;
+  height: auto; min-height: 750px; 
+  padding:28px 0; box-sizing: border-box;
+  background-color: #999;
+}
+  .view_btn{ 
+    position: absolute; top:300px;  bottom:0; left: 0; z-index:50; right: 0;width: 1400px; height: 0; margin: auto; margin-top: -20px;}
+
+    .view_btn button{
+       width: 40px; height: 40px; font-size: 2.5rem;
+       color:#fff;  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+      /* 16px-12pt-100%-1em-1rem */
+    }
+    .next_view{float: right;}
+    .prec_view{float: left;}
+
+  .view_indicator{ 
+    position: absolute; bottom:28px; left: 0; right: 0;
+    width: 840px; height: auto;
+    margin:auto;
+    background-color:var( --step2-color);}
+
+  .view_indicator a{ position: relative;
+     display: block; width: 100%; height: 100%; background-color: #fff; border-radius: 40px;} 
+
+  .view_indicator a:hover,
+  .view_indicator a:focus{background-color: #ccc; outline: 2px solid #f07;}
+
+   .view_indicator a:hover > span,
+   .view_indicator a:focus > span 
+   {/* dispaly: block; position:absolute; z-index:-1*/
+    z-index: 10; bottom:45px; left: 50%; transform: translate(-50%);
+    width: 150px; height: auto; padding: 5px; background-color: #fc7;
+  } 
+    .view_indicator ol{
+      width: 100%; height: auto;
+    }
+    .view_indicator li{
+      float: left; width: 120px; height: 40px;
+      margin: 10px;
+    }
+    .view_outer{position: relative;
+      overflow: hidden;
+      width: 1300px; height: 600px;
+      margin: auto;
+      background-color:var(--step2-color);}
+      /* 1.
+       .view_area{
+        width: 100%; height:100%;
+      }
+      .view_area > div{
+        position: absolute; top:0; left: 0;
+        width: inherit; height: inherit; font-size: 3rem; color:#fff;
+      }
+      .view_01{ z-index: 6; background-color: #099AC3;}
+      .view_02{ z-index: 5; background-color: #9E3C55;}
+      .view_03{ z-index: 4; background-color: #A3AE7B;}
+      .view_04{ z-index: 3; background-color: #29F0C2;}
+      .view_05{ z-index: 2; background-color: #980760;}
+      .view_06{ z-index: 1; background-color: #7A7010;} */
+
+      /* 2. 가로형 슬라이드 배너*/
+
+  .view_area{ width:600%; height: 100%;
+  position: relative; left: 0; top:0;}
+  .view_area > div{ float: left; width:calc(100% / 6); height:100%; color: #fff; font-size: 3rem;}
+  .view_area:after{content: " "; display: block; clear:both;}
+      .view_01{ background-color: #B681F9;}
+      .view_02{ background-color: #5D80A7;}
+      .view_03{ background-color: #0A0FCD;}
+      .view_04{ background-color: #B55FA7;}
+      .view_05{ background-color: #20A9BB;}
+      .view_06{ background-color: #7EF64D;}
+    
+
+  /* 
+  float을 정리하기 위해서 마지막에 clear:both를 사용해야 한다.
+  li 마지막에는 다른 요소가 들어갈 수 없으므로, 가상의 존재를 생성한다
+  가상의 존재는 ::after의 형태를 취하고,
+  after는 반드시 content를 가지고 있어야 한다.
+  */

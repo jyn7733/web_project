@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/* layout_02.css */
+
+#wrap{
+  width: 1600px; height: auto; margin: auto;
+}
+/* header */
+#headBox{
+  width: 100%; height: 150px;
+  background-color: #ddd;
+}
+.head_con{
+  float: left; height: 80px; background-color: #08d;
+}
+.head_con.logo{width: 250px; 
+ margin-top: 34px; margin-left: 50px;}
+.head_con.global_nav{width: 850px;
+  margin-top: 34px; margin-left: 75px;}
+.head_con.user{ width: 250px;
+  margin-top: 34px; margin-left: 75px;}
+
+.global_nav ul {
+  margin: 0; padding: 0;
+  list-style: none;
+}
+.global_nav ul li{ float: left;
+  width: 150px; height: 70px;
+  background-color: #fe5; margin-left: 20px;
+  margin-top: 5px;
+ }
+ .global_nav ul li:first-child{
+   margin-left: 10px;
+ }
+.global_nav ul li:last-child{
+  margin-right: 5px;
+}
+  /* adviewbox */
+#adViewBox{
+  width: 100%; height: 750px;
+  background-color: #eee;
+  padding:28px; box-sizing: border-box;
+}
+  .view_outer{
+    width: 1300px; height: 600px;
+    background-color: #08d;
+    margin: auto;
+  }
+  .view_indicator{
+    width: 850px; height: 60px;
+    background-color: #08d;
+    margin: auto; margin-top: 28px;
+  }
+    .view_indicator ul{
+      margin: 0; padding: 0;
+      list-style: none;
+    }
+    .view_indicator ul li{ float: left;
+      width: 120px; height: 40px;
+      background-color:#fe5 ; margin-left: 20px;
+      margin-top: 10px;
+    }
+  /* localnavbox */
+#localNavbox{
+  width: 100%; height: 250px;
+  background-color: #ccc;
+  margin-bottom: 50px; padding: 18px;
+  box-sizing: border-box;
+}
+  .local_nav_outer{
+    width:1500px; height: 196px;
+    margin: auto;
+    background-color: #08d;
+  }
+  .local_nav_outer ul{
+    margin: 0; padding: 0;
+    list-style: none;
+  }
+  .local_nav_outer ul li{ float: left;
+    width: 200px; height: 150px;
+    background-color: #fe5; margin-left: 30px;
+    margin-top: 23px;
+  }
+  .local_nav_outer ul li:first-child{
+    margin-left: 75px;
+  }
+/* content */
+#popularCotentBox{
+  width: 100%; height: 600px;
+  background-color: #ddd;
+}
+  #popularCotentBox > h3{
+    width: 1300px; height: 50px;
+    background-color: #08d;
+    margin: auto;
+  }
+  .pop_con_area{
+    width: 1300px; height: 470px;
+    background-color: #08d;
+    margin: auto; margin-top: 30px;
+  }
+  .pop_con_part{ float: left;
+    width: 350px; height: 430px;
+    background-color:#f80;
+    margin-left: 62px; margin-top: 20px;
+  }
+  .pop_con_img{ float: left;
+    width: 330px; height: 200px;
+    background-color: #0ee;
+    margin-top: 8px; margin-left: 10px;
+  }
+  .pop_con_text{ float: left;
+    width: 330px; height: 200px;
+    background-color: #0ee;
+    margin-left: 10px; margin-top: 14px;
+  }
+#newcontentBox{
+  width: 100%; height: 900px;
+  background-color: #eee;
+  margin-bottom: 80px;
+  padding: 60px; box-sizing: border-box;
+}
+  #newcontentBox > h3{
+    width: 1300px; height: 50px;
+    background-color: #08d;
+    margin: auto; 
+  }
+  .new_con_area{
+    width: 1300px; height: 700px;
+    background-color: #08d;
+    margin: auto; margin-top: 30px;
+  }
+/*recommendedContentBox  */
+#recommendedContentBox{
+  width: 100%; height: 600PX;
+  background-color: #CCC;
+  margin-bottom: 80px;
+  padding: 60px; box-sizing: border-box;
+}
+  #recommendedContentBox > h3{
+    width: 1300px; height: 50px;
+    background-color: #08d;
+    margin: auto; 
+  }
+  .recom_con_area{
+    width: 1300px; height: 440px;
+    background-color: #08d;
+    margin: auto; margin-top: 30px;
+    padding-top:20px ; box-sizing: border-box;
+  }
+  .recom_con_part{ float: left;
+    width: 300px; height: 400px;
+    background-color: #f8f; margin-left: 33px;
+  }
+  .recom_con_part:nth-of-type(1){
+    margin-left: 0;
+  }
+/* communityBox */
+#communityBox{
+  width: 100%; height: 800PX;
+  background-color: #EEE;
+  margin-bottom: 80px;
+  padding: 60px; box-sizing: border-box;
+}
+  #communityBox > h3{
+    width: 1300px; height: 50px;
+    background-color: #08d;
+    margin: auto; 
+  }
+  .commuity_con_area{
+    width: 1300px; height: 600px;
+    background-color: #08d;
+    margin: auto; margin-top: 30px;
+  }
+/* miniAdBox */
+#miniAdBox{
+  width: 100%; height: 400PX;
+  background-color: #DDD;
+  margin-bottom: 80px;
+  padding: 40px; box-sizing: border-box;
+ }
+  .mini_ad_outer{
+   width:  1500PX; height: 300PX;
+   background-color: #08d;
+   margin: auto;
+  }
+/* footBox */
+#footBox{
+  width: 100%; height: 200PX;
+  background-color: #CCC;
+  padding: 22px; box-sizing: border-box;
+}
+  .foot_area{
+    width: 1300px; height: 140px;
+    background-color: #08d;
+    margin: auto;
+  }
