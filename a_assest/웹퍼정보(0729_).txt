@@ -1,0 +1,83 @@
+git 사용시 사용자이름, 이메일
+
+사용자 : jyn7733
+이메일 : yeha217@gmail
+
+제플린
+
+구글 : yeha217@gmail.com
+
+0730
+typora.io -> 마크다운 언어를 사용하여 작성하는 프로그램
+(각종 스타일 및 이미지,링크 등을 쉽게 걸고 보여줌)
+
+0731
+1. github -> 하나의 하드 만드는 곳
+(계정 : jyn7733)
+
+2. new repository 생성
+
+3. 내컴퓨터에서 git clone 생성한 repository
+
+4. README.md 파일을 생성 및 내용 작성
+
+5. github로 업로드
+
+0810
+http://xidoweb.com/index.html
+
+(강사님 사이트)
+
+0811
+https://www.flaticon.com/
+
+https://fontawesome.com/
+
+https://fontawesome.io/
+
+(아이콘 무료 사이트)
+
+0819
+https://developer.paciellogroup.com/resources/contrastanalyser/
+
+(컬러 명암 대비 관련 프로그램 제공해주는 사이트)
+
+http://www.websoul.co.kr/accessibility/WA_guide21.asp
+(접근성 4원칙)
+
+https://noonnu.cc/
+
+(무료 폰트)
+
+0820
+https://m.blog.naver.com/kira4195/221202925792
+
+826
+https://p-px.com/
+(smart object 연습하는 파일 있는 사이트)
+
+830
+https://zeplin.io/
+(포토샵 이미지를 업로드하여 코드를 볼 수 있도록 함)
+
+916
+https://docs.emmet.io/cheat-sheet/
+(emmet, emmet game)
+(html 태그 관련 사이트)
+
+https://htmlreference.io/
+(html 관련 사이트)
+
+https://cssreference.io/
+(css 관련 사이트)
+
+929
+https://gsnedders.html5.org/outliner/
+(html  관련 사이트)
+
+https://validator.w3.org/
+(html 오류 검사 사이트)
+
+1007
+https://transfonter.org/
+(폰트 변환 사이트/웹사이트에서 사용가능한 폰트로)
