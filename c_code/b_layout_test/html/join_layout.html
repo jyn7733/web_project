@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- jojn_layout.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../fonts/fontsasome/css/all.css">
+  <link rel="stylesheet" href="../fonts/noto_sans/noto_sans.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/join_layout.css">
+  <title>Document</title>
+<link rel="shortcut icon" href="icon이름.png" type="image/png">
+<link rel="apple-touch-icon" href="icon이름.png">
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <h1 class="hidden_wrap">
+        <a href="#">
+          <span>쿠팡</span>
+        </a>
+      </h1>
+   </header>
+    <!-- //headBox -->
+    <article id="joinBox">
+     <h2 class="hidden_context">회원가입에 필요한 정보를 입력하는 페이지</h2>
+     <form action="#" method="post">
+      <fieldset class="join_sign">
+        <legend>가입할 회원의 정보 입력</legend>
+        <ul>
+          <li>
+            <div class="join_wrap clearfix">
+              <label for="userId"><span class="hidden_context">사이트 이용시 사용할 아이디 또는 이메일 입력</span></label>
+              <input type="text" id="userId" value="" name="" readonly placeholder="아이디(이메일)">
+            </div>
+            <p class="data_narr">이메일을 입력하세요.</p>
+          </li>
+          <li>
+            <div class="join_wrap clearfix">
+              <label for="userPw"><span class="hidden_context">생성할 계정의 비밀번호 입력</span></label>
+              <input type="password" id="userPw" value="" name="" readonly placeholder="비밀번호">
+            </div>
+          </li>
+          <li>
+            <div class="join_wrap clearfix">
+              <label for="userPwCheck"><span class="hidden_context">상단에 입력한 계정의 비밀번호를 재확인을 위해 입력</span></label>
+              <input type="password" id="userPwCheck" value="" name="" readonly placeholder="비밀번호 확인">
+            </div>
+          </li>
+          <li>
+            <div class="join_wrap clearfix">
+              <label for="userName"><span class="hidden_context">사용자의 이름을 입력</span></label>
+              <input type="text" id="userName" value="" name=""  placeholder="이름">
+            </div>
+          </li>
+          <li>
+            <div class="join_wrap clearfix">
+              <label for="userPhoneNum"><span class="hidden_context">사용자의 전화번호 입력</span></label>
+              <input type="text" id="userPhoneNum" value="" name=""  placeholder="전화번호">
+            </div>
+          </li>
+        </ul>
+      </fieldset>
+
+
+   </article>
+    <!-- //joinBox -->
+    <footer id="footBox">
+      <h2 class="hidden_context">회사 정보</h2>
+      <p>
+        본인은 <spna class="text_weight">
+          만 14세 이상
+        </spna>이며, 쿠팡 이용약관, 전자금융거래이용약관, 개인정보 수집 및 이용, 
+        개인정보제공 내용을 확인하였으먀, <spna class="text_weight">
+          동의합니다.
+        </spna>
+      </p>
+   </footer>
+     <!-- footBox -->
+  </div>
+  <script></script>
+</body>
+</html>

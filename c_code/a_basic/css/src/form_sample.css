@@ -1,0 +1,54 @@
+/* form.sample.css */
+
+#wrap{
+  width: 265px; height: auto; min-height: 285px;
+  background-color: #eee; margin: auto;
+  padding-top: 30px; box-sizing: border-box;
+}
+
+#snsLogin{
+  width: 100%; height: 120px;
+}
+#snsLogin h2{
+  font-size: 16px;
+  color: #989798; text-align: center;
+}
+
+#snsLogin input{
+  width: 42px; height: 42px;
+  background-color: #fff;
+}
+#snsLogin input:nth-of-type(1){
+  margin-top: 30px;
+  margin-left: 58px;
+}
+#loginArea{
+  width: 100%; height: 165px;
+}
+
+#userId{
+  width: 170px; height: 34px;
+  margin-top: 20px; margin-left: 12px;
+}
+#usePw{
+  width: 170px; height: 34px;
+  margin-left: 12px;
+}
+#loginArea button{
+  width: 66px; height: 68px;
+  background-color: #fff; border: 1px solid #989798;
+}
+#loginArea a{
+  float: left;
+  display: block;
+  margin-left: 12px;
+  background-color: #fff; border: 1px solid #989798;
+}
+#loginArea a:nth-of-type(1){
+  font-size: 0.5rem;
+  width: 52px; height: 20px;
+}
+#loginArea a:nth-of-type(2){
+  font-size: 0.5rem;
+  width: 108px; height: 20px;
+}

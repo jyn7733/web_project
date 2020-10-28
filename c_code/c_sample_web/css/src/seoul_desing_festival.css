@@ -1,0 +1,82 @@
+/* seoul_desing_festival.css */
+
+#wrap{
+  width: 100%; min-width: 1200px; height: auto; min-height: 1000px;
+  margin: auto; background-color: #ccc;
+}
+
+#headBox{
+  width: 100%; height: 780px;
+  background-color: #444;
+}
+.head_side{
+  width: 100%; height: 30px; background-color: #fff;
+}
+.head_side > p {
+  float: left; width: 300px; height: 100%;
+  line-height:30px;}
+.head_side ul{
+  float: right;
+  line-height:30px;
+  width: auto; height: auto;
+}
+.head_side ul li{
+  float: left;
+  width: 80px; height: 30px;
+  margin-left: 5px;
+}
+.head_area{
+  width: 100%; height: 86px;
+  background-color: #fff;
+}
+ h1{
+  float: left;
+  width: 114px; height: 86px;
+}
+#navBox{  float: left;
+  width: 918px; height: 86px;
+} 
+#navBox ul{
+  width: 100%; height: 100%;
+}
+#navBox ul li{
+  float: left;
+  width: 80px; height: 100%;
+  margin-right: 20px;
+}
+#navBox ul li:nth-of-type(1){
+  width: 180px;
+}
+#navBox ul li:nth-of-type(5){
+  width: 120px;
+}
+#snsBox{
+  float: right;
+  width: 223px; height: 86px;
+}
+#snsBox li{
+  float: left;
+  width: 40px; height: 20px;
+  background-color: #fff;
+} 
+
+#contentBox_01{  
+  width: 100%; height: 487px;
+  background-color: #eee;
+}
+#imgBox{
+  width: 100%; height: 353px;
+  background-color: #ddd;
+}
+#contentBox_02{
+  width: 100%; height: 1235px;
+  background-color: #eee;
+}
+#searchBox{
+  width: 100%; height: 255px;
+  background-color: #ddd;
+}
+#footBox{
+  width: 100%; height:409px;
+  background-color: #444;
+}

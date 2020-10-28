@@ -1,0 +1,219 @@
+/* mediaQuery_02.css */
+
+/* 공통냐용 */
+html,body{width: 100%; height: 100%;}
+#wrap{width: 100%; height: auto; min-height: 2000px; background-color: #ccc;}
+
+/* mob_v.css */
+@media screen and (max-width:479px){
+  #headArea{
+    position: fixed; top: 0; left: 0; z-index: 1000;
+    width: 100%; height: 12.5vw; min-width: 240px; min-height: 2.5rem; background-color: #333333;
+  }
+    h1{
+    float: left;
+    width: 6.25rem; height: 30px; margin-top: 5px; margin-left: 10px; 
+    font-size: 1.2rem;
+    background-color: #33b88f;
+    }
+    .head_right_area{float: right;}
+    .member{ float: left; margin-top: 5px; margin-right: 10px; width: 18px; height: 22px; background-color: #fff;}
+    #headArea button{float: left; color: #fff; font-size: 23px; margin-top: 5px; margin-right: 10px;}
+  #gnbNavBox{display: none;}  
+  #viewBox{
+    width: 100%; height: 150vw;
+    padding-top:80px; box-sizing: border-box;
+     background-color: #bbaa77;
+  }
+  .view_add{
+    width: 100%; height: 100%;
+  }
+  .view_add li{
+    width: 84.375vw; height:18.75vw; background-color: #fff;
+    margin: auto; margin-top: 20px;
+  }
+  #contentBox{
+    width: 100%; height: 100vw; 
+    /* padding-top:1.25rem; padding-left: 0.625rem; box-sizing: border-box; */
+    background-color: #547d77;
+  }
+  .content_area{width: 100%; height: 100%; margin: auto;}
+  .content_area li{
+    float: left; margin: 1.5625vw;
+    width: 46.875vw; min-width: 110px; height: 41.5625vw; background-color: #fff;
+  }
+  .content_area li:nth-of-type(2n){
+    float: right;
+  }
+  /* .title_shape{width: 11.875rem;  height: 16rem;  background-color: #33b88f;} */
+  #infoBox{
+    width: 100%; height: 150vw; 
+  }
+    .new_area{width: 100%; height:100%; padding-top: 20px; box-sizing: border-box; background-color: #957de9;}
+      .new_con{width: 100%; height: 100%;}
+      .new_area li {
+        width: 93.75vw; height: 21.875vw; margin: auto; margin-bottom: 10px; background-color: #fff;
+      }
+  #footBox{
+    width:100vw; height: 2.5rem; 
+    padding-top: 5px; box-sizing: border-box; 
+    background-color: #333333;
+  }
+  .company_info{ width: 70.9375vw; height: 7.1875vw; margin: auto; background-color: #33b88f;}
+}
+/* //mob_v.css ----------------------------------*/
+
+/* mob_h.css */
+@media screen and (min-width:480px) and (max-width:767px){
+  /* #wrap{height: 100vh;  background-color: #acf;} */
+  #headArea{
+    position: fixed; top: 0; left: 0; z-index: 1000;
+    width: 100%; height: 60px; background-color: #333333;
+  }
+  h1{
+    float: left;
+    width: 7.875rem; height: 30px; margin-top: 5px; margin-left: 10px; 
+    font-size: 1.2rem;
+    background-color: #33b88f;
+    }
+    .head_right_area{float: right;}
+    .member{ float: left; margin-top: 5px; margin-right: 10px; width: 27px; height: 33px; background-color: #fff;}
+    #headArea button{float: left; color: #fff; font-size: 27px; margin-top: 5px; margin-right: 10px;}
+    
+    #gnbNavBox{
+      display: none;
+      float: right;
+      width: 100px; height: 38px;
+    }
+ 
+  #viewBox{
+    width: 100%; height: 150vw; 
+    padding-tOP: 80PX ;
+    background-color: #bbaa77;
+  }
+  .view_add{
+    width: 100%; height: 100%;
+  }
+  .view_add li{
+    width: 84.375vw; height:18.75vw; background-color: #fff;
+    margin: auto; margin-top: 20px;
+  }
+  #contentBox{
+    width: 100%; height: 150vw; 
+    padding-top:1.25rem; padding-left: 0.625rem; box-sizing: border-box;
+    background-color: #547d77;
+  }
+    .title_shape{width: 11.875rem;  height: 16rem;  background-color: #33b88f;}
+  #infoBox{
+    width: 100%; height: 150vw;
+  }
+    .new_area{width: 100%; height:100%; background-color: #957de9;}
+  #footBox{
+    width:100vw; height: 40px; background-color: #333333;
+  }
+} 
+/* //mob_h.css ----------------------------------*/
+
+/* tab.css */
+@media screen and (min-width:768px) and (max-width:959px){
+  /* #wrap{width: 100%; margin: auto; background-color: #afa;} */
+  #headArea{
+    position: fixed; top: 0; left: 0; z-index: 1000;
+    width: 100%; height: 60px; background-color: #333333;
+  }
+  h1{
+    float: left;
+    width: 174px; height: 42px; margin-top: 5px; margin-left: 10px; 
+    font-size: 1.2rem;
+    background-color: #33b88f;
+    }
+    #gnbNavBox{
+      display: none;
+      float: right;
+      width: 100px; height: 42px;
+    }
+    /* #gnbNavBox ul{
+      width: 100%; height: 100%;
+      margin-top:0.3125rem;
+    }
+    #gnbNavBox ul li{
+      float: left; margin-right: 10px;
+     width: 36px; height: 100%; background-color: #33b88f;
+    }
+    #gnbNavBox ul li:last-of-type{
+      width: 45px; margin-right: 0;
+    } */
+  #viewBox{
+    width: 100%; height: 450px; background-color: #bbaa77;
+  }
+  #contentBox{
+    width: 100%; height: 210px; 
+    padding: 20px 10px; box-sizing: border-box;
+    background-color: #547d77;
+  }
+    .title_shape{width: 192px;  height: 156px;  background-color: #33b88f;}
+  #infoBox{
+    width: 100%; height:540px;
+  }
+    .new_area{float: left; width: 50%; height:540px; background-color: #9e7de9;}
+    .notice_area{float: left; width: 50%; height:540px; background-color: #95abe9;}
+  #footBox{
+    width:100%; height: 120px; background-color: #333333;
+  }
+}
+/* //tap.css ----------------------------------*/
+
+/* pc.css */
+@media screen and (min-width:960px){
+  /* #wrap{width: 100%; margin: auto;} */
+  #headBox{
+    position: fixed; top: 0; left: 0; z-index: 1000;
+    width: 100%; height: 60px; 
+    background-color: #333333;
+  }
+  #headArea{
+    width: 100%; max-width: 1200px; height: 60px; 
+    margin: auto;
+    background-color: #333333;
+  }
+  h1{
+    float: left;
+    width: 250px; height: 45px; margin-top: 5px; margin-left: 10px; 
+    font-size: 1.2rem;
+    background-color: #33b88f;
+    }
+
+    #gnbNavBox{
+      float: right;
+      width: 500px; height: 42px;
+    }
+    #gnbNavBox ul{
+      width: 100%; height: 100%;
+      margin-top:0.3125rem;
+    }
+    #gnbNavBox ul li{
+      float: left; margin-right: 10px;
+     width: 50px; height: 100%; background-color: #33b88f;
+    }
+  #viewBox{
+    width: 100%; height: 450px; background-color: #bbaa77;
+  }
+  #contentBox{
+    width: 100%; max-width: 1200px; height: 210px; 
+    margin: auto; padding: 20px 10px; box-sizing: border-box;
+    background-color: #547d77;
+  }
+    .title_shape{width: 192px;  height: 156px;  background-color: #33b88f;}
+  #infoBox{
+    width: 90%; max-width: 1200px; height: 540px; 
+    margin: auto;
+  }
+    .new_area{float: left; width: 33.333333%; height:540px; background-color: #9e7de9;}
+    .notice_area{float: left; width: 33.333334%; height:540px; background-color: #95abe9;}
+    .more_area{float: left; width: 33.333333%; height:540px; background-color: #95d2e9;}
+  #footBox{
+    width:100%; height: 120px; background-color: #333333;
+  }
+} 
+
+/* //pc.css ----------------------------------*/

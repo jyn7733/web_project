@@ -96,7 +96,7 @@ img요소와 background-imge 차이점
 
 10. background-size: 이미지의 크기값으로 가로, 세로 비율 설정
 11. background-size: auto | cover( 이미지 꽉차게) | contain(이미지 전부) | 값(100%) 값(auto)
-12. hover,focus,active....등의 기능을 사용시 전후 값을 비교 가능하도록 자연스럽게 처리
+12. hover,focus,active....등의 기능을 사용시 전후 값을 비교 가능하도록 자연스럽게 처리 
 
 13. background-clip 배경이미지의 범위를 지정하는 것
 14. background-clip : content-box(선, 패딩을 제외한) | padding-box(padding까지) | border-box(외곽선 까지)

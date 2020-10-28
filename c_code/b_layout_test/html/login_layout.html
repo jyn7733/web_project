@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- login_laout.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../fonts/fontsasome/css/all.css">
+  <link rel="stylesheet" href="../fonts/noto_sans/noto_sans.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/login_layout.css">
+
+  <title>coupang</title>
+<link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../img/favicon.png">
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <h1 class="hidden_wrap">
+        <a href="#">
+          <span>쿠팡</span>
+        </a>
+      </h1>
+    </header>
+    <!-- //headBox -->
+    <article id="loginBox">
+      <h2 class="hidden_context">로그인 페이지 만들기</h2>
+      <form action="#" method="post">
+        <fieldset class="login_info">
+          <legend>로그인 정보 입력</legend>
+          <ul>
+            <li>
+              <div class="input_wrap clearfix">
+                <label for="userId">
+                  <i class="fas fa-envelope"></i>
+                  <span class="hidden_context">로그인 할 사용자의 아이디 또는 이메일을 입려하세요.</span>
+                </label>
+                <input type="text" id="userId" value="" name="" required     placeholder="아이디(이메일)">
+              </div>  
+            </li>
+            <li>
+              <div class="input_wrap clearfix">
+                <label for="userPw">
+                  <i class="fas fa-lock"></i>
+                  <span class="hidden_context">입력한 계정의 비밀번호를 입력하세요.</span>
+                </label>
+                <input type="password" id="userPw" value="" name="" required 
+                      placeholder="비밀번호">
+
+                 <input type="checkbox" id="checkPw" name="checkPw" value="비밀번호 보이게 처리 유무" class="hidden_context" >
+                 <label for="checkPw">
+                  <i class="fas"></i>
+                   <span class="hidden_context">비밀번호 보이게 처리 유무</span>
+                 </label>     
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="login_check clearfix">
+          <legend>회원 정보 관리</legend>
+          <input type="checkbox" id="rememberLogin" name="" value="remember" class="hidden_context">
+          <label for="rememberLogin">
+            <i class="far"></i>
+            <span class="hidden_context">사용자 계정에 대한</span>
+            <span>자동로그인</span>
+            <span class="hidden_context">체크 유무</span>
+          </label>
+          <p>
+            <span class="hidden_context">계정을 잃어버렸다면</span>
+            <a href="#">
+              아이디(이메일)/비밀번호 찾기
+            </a>
+            <span class="hidden_context">링크를 통해 확인해 주세요.</span>
+            &gt;
+          </p>
+        </fieldset>
+
+        <fieldset class="login_confirm">
+          <legend>회원 로그인 확인</legend>
+          <input type="submit" value="로그 인">
+          <!-- <button type="submit">로그인</button> -->
+        </fieldset>
+      </form>
+
+      <div class="join_link">
+        <a href="./join_layout.html">회원가입</a>
+      </div>
+      <hr />
+    </article>
+
+    
+    <footer id="footBox">
+      <h2 class="hidden_context">쿠팡정보</h2>
+      <p>ⓒCoupang Corp. All rights reserved.</p>
+    </footer>
+    <!-- //footBox -->
+  </div>
+<!-- //wrap -->
+  <script ></script>
+</body>
+</html>

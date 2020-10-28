@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- form_sample_re.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../fonts/fontsasome/css/all.css">
+  <link rel="stylesheet" href="../fonts/noto_sans/noto_sans.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+
+  <link rel="stylesheet" href="../css/src/form_sample_re.css">
+
+
+  <title>Document</title>
+<link rel="shortcut icon" href="../img/icon_01.png" type="image/png">
+<link rel="apple-touch-icon" href="../img/icon_01.png">
+</head>
+<body>
+  <h1>로그인 페이지 만들기</h1>
+  <div id="wrap">
+    <form>
+      <fieldset class="social_login">
+        <legend class="hidden_context">소셜 로그인</legend>
+        <h2>소셜 로그인</h2>
+        <ul class="hidden_wrap">
+          <li><button type="button"><span>네이버 계정 로그인</span></button></li>
+          <li><button type="button"><span>페이스북 계정 로그인</span></button></li>
+          <li><button type="button"><span>구글 계정 로그인</span></button></li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="member_login">
+        <legend class="hidden_context">멤버 로그인</legend>
+        <div class="user_sing">
+          <label for="userId" class="hidden_context">사용자 아이디 또는 이메일을 입력하세요.</label>
+          <input type="text" id="userId" name="" value="" placeholder="아이디 / 이메일">
+          <label for="userPw" class="hidden_context">사용자 계정에 따른 비밀번호를 입력하세요.</label>
+          <input type="password" id="userPw" name="" value="" placeholder="사용자 비밀번호">
+        </div>
+        <div class="user_confirm">
+          <!-- <button type="submit"></button> -->
+          <input type="submilt" value="로그인">
+        </div>
+      </fieldset>
+
+      <fieldset class="join_and_find">
+        <legend class="hidden_context">가입 및 계정찾기</legend>
+        <a href="./contents.html" target="_blank">회원가입</a>
+        <a href="./contents.html" target="_blank">아이디 비밀번호 찾기</a>
+      </fieldset>
+    </form>
+
+    <!-- <form action="#" method="post">
+      <fieldset>
+        <legend class="hidden_context">소셜 로그인</legend>
+        <h2>소셜로그인</h2>
+      </fieldset>
+
+      <hr class="part_line"/>
+
+      <fieldset>
+        <legend class="hidden_context">멤버 로그인</legend>
+      </fieldset>
+      <fieldset>
+        <legend class="hidden_context">가입 및 계정찾기</legend>
+      </fieldset>
+    </form> -->
+  </div>
+</body>
+</html>

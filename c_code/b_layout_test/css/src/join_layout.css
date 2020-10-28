@@ -1,0 +1,81 @@
+/* join_layout.css */
+
+#wrap{
+  width: 520px; height: auto; min-height: 500px;
+  margin: auto;  padding-top:42px;
+  background-color: #ccc;
+}
+
+#headBox{
+  width: 472px; height: 50px;
+  margin-bottom: 12px;
+}
+
+h1{
+  width: 211px; height: 100%; margin: auto;
+  background-color: #fff;
+}
+
+h1 > a{
+  background-position: 50% 50%;
+  /* background-image: url("../../img/logo-coupang.svg"); */
+  background-image: url("../../img/logo_join.png");
+}
+
+#joinBox{
+  width: 460px; height: auto; min-height: 200px;
+  margin: auto;
+}
+form{
+  width: 100%; height: auto;
+  margin-bottom: 28px;
+}
+
+.join_sign{
+  width: 100%; height: auto; min-height: 20px;
+}
+
+.join_sign ul{
+  width: 100%; height: auto;
+}
+.join_sign ul>li{
+  width: 100%; height: auto;
+  margin-bottom: 13px;
+}
+.join_sign ul>li:last-of-type{
+  margin-bottom: 0;
+}
+.join_wrap{
+  width: 100%; height: auto; 
+  border: 1px solid  #777; 
+}
+.join_sign label{
+  float: left;
+  width: 44px; height: 50px;
+  border-right: 1px solid #777;
+  background-color: #ddd;
+}
+.join_sign input{
+  float: left;
+  padding: 0;
+  width: 415px; height: 50px;
+  border: 0;
+}
+
+.data_narr{
+  display: none;
+  margin-top: 10px; 
+  font-size: 0.875rem; font-weight: 300;
+  text-indent: 0.6rem;
+}
+
+.error{ border-bottom: 2px solid #f22;}
+.error ~ p{display: block; color: #f22;}
+
+/* .join_sign label:first-of-type{
+  float: left; width: 46px; height: 48px;
+  border-right: 1px solid #777; 
+  background-color: #ddd;
+  text-align: center; line-height: 55px; color: #555; font-size: 1.2rem;
+
+} */

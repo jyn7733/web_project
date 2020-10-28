@@ -1,0 +1,125 @@
+/* form_sample_re.css */
+
+body{
+  background-color: #f8f8f8;
+}
+
+#wrap{ position: relative;
+  width: 260px; height: 283px;
+  width: 16.25rem; height:17.6875rem;
+  border: 1px solid #ddd;
+  margin: 30px auto;
+  background-color: #fff;
+}
+
+h1{
+  font-size: 1.5rem; text-align: center;
+}
+
+fieldset{
+  width: 100%; height: auto;
+  padding:0; margin:0; border:0;
+  box-sizing: border-box;
+}
+
+fieldset > h2{
+  width: 100%; height: 20px; margin-bottom: 12px;
+  font-size: 16px; text-align: center; color:#333;
+}
+
+.social_login{
+  padding: 16px 56px 26px;
+  border-bottom: 1px solid #ddd;
+}
+
+.social_login ul{
+  width: 100%; height: 42px;
+}
+.social_login ul li{
+  float: left;
+  width: 42px; height: 42px;
+  margin-right: 10px;
+
+}
+
+.social_login ul li:last-child{
+  margin-right: 0;
+}
+
+.social_login button{
+  border-radius: 3px;
+  background-color: #c7f;
+}
+
+.member_login{
+  min-height: 68px; 
+  margin-top: 20px; margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.user_sing{
+  float: left;
+  width: 168px; height: 68px; background-color: #cdc;
+}
+
+.user_sing > input{
+  width: 100%; height: 50%; border: 0; box-sizing: border-box; text-indent: 0.5rem;
+  border: 1px solid #ddd;
+  letter-spacing: 0.15rem;
+}
+.user_sing > input:first-of-type{
+  border-bottom:0;
+}
+
+input::placeholder{
+  color:#fac;
+}
+
+.user_confirm{
+  float: right;
+  width: 65px; height: 68px; background-color: #cdc;
+}
+
+.user_confirm input{
+  width: 100%; height: 100%; 
+  border: 1px solid #ddd;
+  margin: 0; padding: 0; box-sizing: border-box;
+  cursor: pointer;
+}
+
+.join_and_find{
+  min-height: 20px; padding: 0 10px;
+}
+
+.join_and_find a{
+  font-size: 12px;
+  padding: 2px; border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius:3px;
+}
+
+.join_and_find a:first-of-type{
+  margin-right: 15px;
+}
+/* .part_line{
+  position: absolute; left: 0; top: 118px;
+  width: 100%; height: 0;
+  border: none;
+  border-bottom:1px solid #ddd;
+}
+
+fieldset{
+ width: 100%; border:0; height: auto; 
+ padding: 0; margin: 0;
+ background-color: #cdf;
+}
+
+fieldset:nth-of-type(1){
+  height: 100px; 
+}
+fieldset:nth-of-type(2){
+  height: 98px; 
+}
+fieldset:nth-of-type(3){
+  height: 19px; 
+} */

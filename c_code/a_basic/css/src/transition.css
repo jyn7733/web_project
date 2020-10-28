@@ -1,0 +1,188 @@
+/* transition.css */
+
+#wrap{
+  width: 62rem; height: auto; min-height: 30rem;
+  margin: auto; background-color: #dfdfdf;
+}
+.part{
+  width: 90%; height: 400px; margin: auto;
+  border: 1px solid #333; box-sizing: border-box;
+}
+.move_01{
+  width: 200px; height: 200px; background-color: #fa0;
+  border-radius: 100%; box-sizing: border-box;
+  transition: all 500ms ease;
+}
+.move_01:hover{
+  background-color: #07a;
+  color:#fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 10px solid #afc;
+  transition: all 1500ms linear;
+}
+.verticle_center{
+  position: relative; text-align: center;
+}
+.verticle_center span{
+  position: absolute; top: 50%;
+  display:block; width: 100%; height: 0;
+
+}
+.verticle_center span u {
+  display: block;
+  transform: translateY(-50%);
+  text-decoration: none;
+
+}
+.tr_01{
+  width: 100%; height: auto;
+}
+.tr_01 > li{
+  float: left;
+  width: 150px; height: 50px;
+  border-radius: 50px;
+  border: 1px solid #07f;
+  background-color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 10px;
+}
+.tr_01 > li:nth-last-child(1){
+  transition-property: background-color, color;
+  transition-duration: 500ms;
+  transition-timing-function:ease;
+}.tr_01 > li:nth-child(1):hover{
+  background-color: #f8e;
+  color: #fff; font-size: 2rem;
+}
+.tr_01 > li:nth-last-child(2){
+  transition-property: border;
+  transition-duration: 500ms;
+  transition-timing-function:ease;
+}.tr_01 > li:nth-child(2):hover{
+  border: 1px dotted #333;
+}
+.tr_01 > li:nth-child(3){
+  transition-property: width;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+}
+.tr_01 > li:nth-child(3):hover{
+  width: 50px;
+transition-property: width;
+transition-duration: 500ms;
+transition-timing-function: ease-out;
+}
+
+
+.tr_01 > li:nth-child(6):hover{
+  width: 500px; height: 200px;
+  transition-property: width, height;
+  transition-duration: 1000ms;
+  transition-delay: 500ms;
+  transition-timing-function: ease;
+}
+
+.tr_01 > li:nth-child(7):hover{
+  width: 500px; height: 200px;
+  background-color: #fe8;
+  transition: all 500ms ease-in 800ms;
+}
+/* 
+- 속도를 처리하는 형태를 timing-function;
+  ease : 자연스럽게(약간 빨라지다가 조금 천천히)
+  ease-in : 점점 빠르게
+  ease-out : 점점 느리게
+  ease-in-out : 점점 빠르다가 후반부에 느리게
+  linear : 일정한 속도
+  cubic-bezier()
+*/
+
+.tr_01 li:last-child:hover{
+  height: 500px;
+  transition: all 2000ms cubic-bezier(.17,.67,.83,.67);
+}
+.box{
+  position: relative;
+  width: 400px; height: 500px; margin: 20px auto 50px;
+  background-color: #acf;
+}
+
+.box span{
+  position: absolute;
+}
+.box .n_1{
+  top:0; left: 0;
+  width: 0; height: 20px;
+  transition: all 500ms linear 1500ms;
+  background-color: #f8e; 
+}
+.box .n_2{
+  top:0; right:0;
+  width: 20px; height: 0;
+  transition: all 500ms linear 1000ms;
+  background-color: #f8e; 
+}
+.box .n_3{
+  bottom:0; right: 0;
+  width: 0; height: 20px;
+  transition: all 500ms linear 500ms;
+  background-color: #f8e; 
+}
+.box .n_4{
+  bottom:0; left: 0;
+  width: 20px; height:0;
+  transition: all 500ms linear 200ms;
+  background-color: #f8e; 
+}
+
+.box:hover .n_1{
+  width: 100%; height: 20px;
+  transition: all 500ms linear 0ms;
+}
+.box:hover .n_2{
+  width: 20px; height: 100%;
+  transition: all 500ms linear 200ms;
+}
+.box:hover .n_3{
+  width: 100%; height: 20px;
+  transition: all 500ms linear 500ms;
+}
+.box:hover .n_4{
+  width: 20px; height: 100%;
+  transition: all 500ms linear 1000ms;
+}
+/* ----------------------------------------- */
+.img{
+  width: 800px; height: 800px;
+  margin: auto;
+  background-image: url("../../img/tree.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all 1500ms ease;
+}
+.bg{
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0);  
+  transition: all 1500ms ease;
+}
+.bg p{
+  color:rgba(0, 0, 0, 0); text-align: center; font-size: 2rem;
+  transition: all 1500ms ease;
+}
+
+.img:hover{
+  background-size: auto 120%;
+}
+.img:hover .bg{
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.img:hover .bg p{
+  color: rgba(255,255,255,1);
+}
+/* 
+:(하나짜리 - 의사전달행동) - hover, focus, visited, linked, checked
+::(두개짜리 - 처음부터 처리된 기능) - before, after, first-letter, first-line,placeholder, maker
+*/
