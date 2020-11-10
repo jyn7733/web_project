@@ -1,0 +1,19 @@
+/* monfee_main */
+
+  @import url('./monfee/monfee_wrap.css');
+  @import url('./monfee/monfee_headBox.css');
+  @import url('./monfee/monfee_viewBox.css');
+  @import url('./monfee/monfee_bestNewsBox.css');
+  @import url('./monfee/monfee_issueBox.css');
+
+/* #conBox --------------------------------------*/
+#conBox{width: 100%; height: auto; min-height: 1880px;}
+  .content_text{width: 100%; height: 600px; background-color: #fdd;}
+  .meterial_icon{width: 100%; height: 200px; background-color: #add;}
+
+/* #location --------------------------------------*/
+#location{width: 100%; height: 1080px; background-color: #D2526A;}
+
+/* #footBox --------------------------------------*/
+#footBox{width: 100%; height: 396px; background-color: #dd8899;}
+

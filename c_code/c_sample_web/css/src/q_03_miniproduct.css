@@ -1,0 +1,37 @@
+/* q_03_miniproduct.css */
+#miniProduct{
+  position: relative;
+  width: 400px; height: 340px; margin: auto; background-color: #888;}
+  /*silde btn------------  */
+.silde_btn{position: absolute; top: 50%; left: 50%; transform:  translateX(-50%);
+  width: 100%; height: 0;}
+.silde_btn>button{transform: translateY(-50%);
+  float: left; margin-left: -50px; border-radius: 100%;
+  width: 100px; height: 100px; background-color: #666;}
+.silde_btn>button:first-of-type{float: right;margin-right: -50px;}
+.silde_btn>button:hover{opacity: 0.8;}
+  /*inidcator--------------  */
+.indicator{
+  position: absolute; left: 0; right: 0; margin: auto; bottom: 10px;
+  width: 194px; height: 28px; background-color: #777; border-radius: 20px;}
+.indicator li{ float: left; width: 26px; height: 26px; margin-right: 16px;}
+.indicator li:last-child{margin-right: 0;}
+.indicator a{ display: block; width: 100%; height: 100%; background-color: #fff; border-radius: 100%;}   
+.indicator li.action a {background-color: #fe8;}
+
+  /*product_wrap-------------  */
+.product_wrap{
+  overflow: hidden;
+  width: 100%; height: 300px; background-color: #fff;}
+.product{position: relative; z-index: 100; width: 500%; height: 100%;}
+.product li{
+  float: left; width: 20%; height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+.product_01{background-image: url("../../img/monfee/minicake/minicake/tj_minicake_001.jpg");}
+.product_02{background-image: url("../../img/monfee/minicake/minicake/tj_minicake_002.jpg");}
+.product_03{background-image: url("../../img/monfee/minicake/minicake/tj_minicake_003.jpg");}
+.product_04{background-image: url("../../img/monfee/minicake/minicake/tj_minicake_007.jpg");}
+.product_05{background-image: url("../../img/monfee/minicake/minicake/tj_minicake_009.jpg");}

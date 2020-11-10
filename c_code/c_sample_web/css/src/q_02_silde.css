@@ -1,0 +1,35 @@
+/* q_02_silde.css */
+body{ background-color: #ccc;}
+
+#miniProduct{
+  position: relative;
+  width: 400px; height: auto; min-height: 300px;
+  background-color: #ccc;
+  margin: auto;
+}
+.slide_btn{
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%); z-index: 1000;
+  width: 100%; height: 0;
+}
+.slide_btn>button{
+  float: left;
+  width: 50px; height: 50px; background-color: #fff;}
+.slide_btn>button:first-of-type{float: right;}
+.product_wrap{
+  overflow: hidden;
+  width: 100%; height: 300px; background-color: #fe8;
+}
+.product{ width: 500%; height: 100%;}
+.product li{ 
+  float: left; width: 20%; height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% auto;
+}
+
+.product_01 {background-image: url("../../img/monfee/minicake/minicake/tj_minicake_001.jpg");}
+.product_02 {background-image: url("../../img/monfee/minicake/minicake/tj_minicake_002.jpg");}
+.product_03 {background-image: url("../../img/monfee/minicake/minicake/tj_minicake_003.jpg");}
+.product_04 {background-image: url("../../img/monfee/minicake/minicake/tj_minicake_008.jpg");}
+.product_05 {background-image: url("../../img/monfee/minicake/minicake/tj_minicake_009.jpg");}

@@ -1,0 +1,249 @@
+/* monfee_pc.css */
+
+#wrap{
+  position: relative;
+  width: 100%; height: auto; min-height: 700px;
+}
+@media screen and (min-width:1024px){
+  /* headBox-------------------------------- */
+  #headBox{
+    position: absolute; top:0px; left: 0; z-index: 1000;
+    width: 100%; min-width: 1024px;  height: 120px; margin: auto;
+    background-color: #fff;
+  }
+  .head_area{ width: 940px; min-width: 1024px;   height: 100%; margin: auto; }
+    h1{
+      float: left; width: 220px; height: 100%; margin-left: 30px;
+      background-color: #a43300;
+      background-image: url("../../img/source/img/h1_logo.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    h1 a{     
+      display: block; white-space: 100%; height: 100%;
+      background-image: url("../../img/source/img/h1_logo.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;}
+    #gnbBox{
+      float: right;
+      width: 600px; height: 100%;
+    }
+    #gnbBox ul{
+      width: 100%; height: 100%;
+    }
+    #gnbBox ul li{
+      float: left; width: 120px; height: 100%;
+      margin-right: 30px; font-size: 2rem; font-weight: bold;
+      line-height: 120px;
+    }
+  /*adBanner -------------------------------------  */
+  #adBanner{
+    position: relative;
+    width: 100%; min-width: 1024px; height: 1080px;
+    background-color: #eee;
+  }
+    .pre_arrow{
+      position: absolute; top: 455px; left: 40px ; z-index: 500;
+      width: 82px; height: 175px;
+      background-image: url("../../img/source/img/adBanner/slide_btn.png");
+      background-repeat: no-repeat;
+    }
+    .next_arrow{
+      position: absolute; top: 455px; right:40px; z-index: 500;
+      width: 82px; height: 175px;
+      background-image: url("../../img/source/img/adBanner/slide_btn.png");
+      background-repeat: no-repeat;
+      background-position: -98px 0;
+    }
+    .indicator{
+      position: absolute; top: 1017px; right: 62px;
+      width: 360px; height: 40px;
+    }  
+    .indicator ul{ width: 100%; height: 100%;}
+    .indicator ul li {
+      float: left; margin-right: 40px;
+      width: 40px; height: 40px; border-radius: 100%;
+       background-color: #fff;}
+    .indicator ul li button{
+      width: 100%; height: 100%;
+    }
+    .indicator ul li:first-child{ background-color: #b62900;}  
+    .indicator ul li:last-child{
+      margin-right: 0;
+    }  
+    .text_area{
+      position: absolute; top: 0; left: 0; z-index: 300;
+      width: 50%; height: 100%; background-color: rgba(165, 38, 2, 0.5);
+     }
+     .text_area h3{
+       position: absolute; top:350px; left: 130px;
+       width: 430px; height: 134px;
+     }
+     .text_area h3 a {
+       display: block; width: 100%; height: 100%;
+       background-image: url("../../img/source/img/monfee_logo.png");
+       background-repeat: no-repeat;
+       background-position: 50% 50%;
+       background-size: auto 75%;
+     }
+     .text_area p{
+      position: absolute; top:510px; left: 130px;
+      display: block; width: 364px; height: 290px;
+      color:#fff;
+    }
+    .ad_img{
+      position: absolute; top:0; left: 0;
+      overflow: hidden;
+      width: 100%; height: 100%;
+    }
+    .ad_img ul{
+      width: 500%; height: 100%; background-color: #555;
+    }
+    .ad_01{
+      width: 20%; height: 100%;
+      background-image: url("../../img/source/img/adBanner/slide_01.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+  /* bestNews ----------------------------------- */
+  #bestNews{
+    width: 940px; min-width: 1024px;   height: 1200px; margin: auto;
+    background-color: #fff; padding-top: 50px ; box-sizing: border-box;
+   }
+   #bestNews h2{
+     width: 220px; height: 40px; color:#333; margin-left: 40px;
+     font-size: 2rem; border-bottom: 2px solid #333;
+   }
+   #bestNews ul{
+    width: 100%; height: 100%;
+  }
+  #bestNews ul li{
+    float: left; margin: 40px 20px 60px 0;
+    width: 220px; height: 390px;
+  }
+  #bestNews ul li:nth-child(1),
+  #bestNews ul li:nth-child(5){
+    margin-left: 40px;
+  }
+  #bestNews a{
+    display: block; width: 100%; height: 100%;
+  }
+  #bestNews div{
+    width: 100%; height: 260px; 
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  #bestNews div:last-child{
+    height: 100%;
+    background-image: url("../../img/source/img/new_menu/default_menu.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  #bestNews dl{
+    width: 100%; height: 130px;
+    padding: 10px; box-sizing: border-box;
+  }
+  .best_news_title{ font-size: 20px; font-weight: bold;} 
+  .best_news_text{margin-top: 10px;}
+
+  /* issue_text ---------------------------- */
+  .issue_text{
+    width: 100%; min-width: 1024px;   height: 860px; background-color: #777; padding-top: 240px; box-sizing: border-box;
+  }
+  .issue_text_area{
+    position: relative;
+    width: 90%; height: 520px; margin: auto;
+    background-color: #62d5d5;
+  }
+  .issue_text_area h2{
+    width: 24.707031vw; height: 45px; margin-left: 20px;
+    font-size: 2rem; border-bottom: 2px solid #333;
+  }
+  .issue_text_area p{
+    display: block; width: 80%; height: 310px;
+    margin-left: 20px; margin-top: 20px;
+  }
+  .issue_text ul{ 
+    position: absolute; bottom: 20px; right: 30px; z-index: 300;
+    width: 240px; height: 30px;
+  }
+  .issue_text ul li{
+    float: left; margin-right: 10px;
+    width: 30px; height: 30px; background-color: #fe8;
+  }
+  .issue_text ul li:last-child{
+    margin-right: 0;
+  }
+  /* issue_icon--------------------------------- */
+  .issue_icon{ 
+    width: 100%; min-width: 1024px; height: 480px;
+    padding: 100px; box-sizing: border-box;
+  }
+  .issue_icon ul{
+    position: relative;
+    width: 890px; height: 260px;
+    margin: auto;
+  }
+  .issue_icon ul li{
+    width: 260px; height: 260px; 
+    margin-right: 4.882812vw ;
+    border-radius: 100%;
+    background-color: #fe8;
+  }
+  .issue_icon ul li:nth-child(1){
+    float: left;
+  }
+  .issue_icon ul li:nth-child(2){
+    position: absolute; top: 0; left: 0; right: 0; margin: auto;
+  }
+  .issue_icon ul li:nth-child(3){
+    float: right;
+  }
+
+  .issue_icon ul li:last-child{
+    margin-right: 0;
+  }
+  /* content_text  -------------------- */
+  .content_text{ 
+    width: 100%; min-width: 1024px;   height: 600px;
+    background-color: #494f53; padding-top: 150px ; box-sizing: border-box;
+  }
+    h2{ 
+      width: 655px; height: 65px;
+      font-size: 3rem; color: #fff;
+      margin: auto; text-align: center;
+    }
+    p { 
+      display: block; width: 770px; height: 210px; margin: auto;
+      margin-top: 60px; color: #fff
+    }
+
+  /*meterial_icon -------------------------  */
+  .material_icon{
+    position: relative;
+    width: 100%; min-width: 1024px;   height: 200px; background-color: #b62900;
+  }
+  .meterial_icon_next{ 
+    position: absolute; top:40px; left: 45px; width: 56PX; height: 120PX;
+    background-image: url("../../img/source/img/material/material_btn.png");
+    background-repeat: no-repeat;
+    background-position: 0 0; 
+  }
+  .meterial_icon_pre{ 
+    position: absolute; top:40px; right: 45px; width: 56PX; height: 120PX; 
+    background-image: url("../../img/source/img/material/material_btn.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0; 
+  }
+
+
+  #location{
+    width: 100%; min-width: 1024px;   height: 1080px; background-color: #eee;
+  }
+  #footBox{
+    width: 100%; min-width: 1024px;   height: 400px; background-color: #555;  background-image: url("../../img/source/img/new_menu/menu_01.png");
+  }
+}
+
