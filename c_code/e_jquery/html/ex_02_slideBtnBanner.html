@@ -14,7 +14,7 @@
 
  <link rel="stylesheet" href="../css/base/reset.css">
  <link rel="stylesheet" href="../css/base/common.css">
- <link rel="stylesheet" href="../ex_02_slideBtnBanner.css">
+ <link rel="stylesheet" href="../css/src/ex_02_slideBtnBanner.css">
  <title>Document</title>
 <link rel="shortcut icon" href="icon이름.png" type="image/png">
 <link rel="apple-touch-icon" href="icon이름.png">
@@ -36,7 +36,7 @@
           <i class="fas fa-chevron-circle-left"></i>
         </button>
       </div>
-      <div class="slide_wrap">
+      <div class="slide_wrap horizontal_slide">
         <ul>
           <li class="cake_01"><a href="#">상품명_01</a></li>
           <li class="cake_02"><a href="#">상품명_02</a></li>
@@ -46,10 +46,62 @@
         </ul>
       </div>  
     </div>
-
+<!-- ====================================================== -->
+<div class="part slide_02">
+  <h2>좌,우 슬라이드 배너 만들기 <br /> fade처리되는 배너</h2>
+  <div class="slide_btn">
+    <button type="button" class="next">
+      <span class="hidden_context">다음 내용 보기</span>
+      <i class="fas fa-chevron-circle-right"></i>
+    </button>
+    <button type="button" class="prev">
+      <span class="hidden_context">이전 내용 보기</span>
+      <i class="fas fa-chevron-circle-left"></i>
+    </button>
   </div>
+  <div class="slide_wrap index_slide">
+    <ul>
+      <li class="cake_01 action"><a href="#">상품명_01</a></li>
+      <li class="cake_02"><a href="#">상품명_02</a></li>
+      <li class="cake_03"><a href="#">상품명_03</a></li>
+      <li class="cake_04"><a href="#">상품명_04</a></li>
+      <li class="cake_05"><a href="#">상품명_05</a></li>
+    </ul>
+  </div> 
+  </div>
+  <!-- =================================================== -->
+  <div class="part  indicator_horizontal_slide">
+    <h2>인디케이터 이용한 좌,우로 이동하는 슬라이드 배너 만들기</h2>
+    <ul class="indicator hidden_wrap">
+      <!-- 1. eq,index -->
+      <!-- * 2. href, id를 이용하여 페이지 연결 *
+             2-1. 클릭시 해당 베녀가 나타나게
+             2.2  focus처리시 해당 배너 나타가게
+             2.3 마우스를 올렸을 경우 해당 배너가 나타나게 -> 클릭처리는 해당배너로 포커스 강제이동
+             2.4 접근성을 올려서 키보드 방향키로 인디케터를 이동하게 처리 
+      -->
+      <!-- 3. data -->
+      <li class="action"><a href="#pr_01"><span>상품_01 요약 설명</span></a></li>
+      <li><a href="#pr_02"><span>상품_02 요약 설명</span></a></li>
+      <li><a href="#pr_03"><span>상품_03 요약 설명</span></a></li>
+      <li><a href="#pr_04"><span>상품_04 요약 설명</span></a></li>
+      <li><a href="#pr_05"><span>상품_05 요약 설명</span></a></li>
+    </ul>
+    <!-- data-link 는 임의의 변수를 생성하는 것. data-뒤에 오는 것은 내 맘대로 변수명을 지정해줘도 된다. -->
+    <div class="slide_wrap">
+      <ul>
+        <li class="cake_01"><a id="pr_01" href="#">상품명_01</a></li>
+        <li class="cake_02"><a id="pr_02" href="#">상품명_02</a></li>
+        <li class="cake_03"><a id="pr_03" href="#">상품명_03</a></li>
+        <li class="cake_04"><a id="pr_04" href="#">상품명_04</a></li>
+        <li class="cake_05"><a id="pr_05" href="#">상품명_05</a></li>
+      </ul>
+    </div> 
+    </div> <!--//#wrap  -->
   <script src="../js/base/jquery-3.5.1.js"></script>
   <script src="../js/base/jquery-ui.js"></script>
  <script src="../js/src/ex_02_slideBtnBanner.js"></script>
+ <script src="../js/src/ex_02_slideBtnBanner2.js"></script>
+ <script src="../js/src/ex_02_slideBtnBanner3.js"></script>
 </body>
 </html>
