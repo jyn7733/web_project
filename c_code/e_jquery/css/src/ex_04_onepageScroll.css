@@ -32,14 +32,46 @@ body{overflow-x: hidden;}
   width: 100%; height: 800px; border-bottom: 1px solid #07a; font-size: 4rem;
   background-color: #faf; 
 }
+/* conBox_01 */
 #conBox_01{
   width: 100%; height: 1600px; border-bottom: 1px solid #07a; 
   background-color: #fff; background-image: linear-gradient(60deg, #fa0, #acf, #fac)
 }
+  .tab_li{width: 80%; height: 40px; border: 2px solid #07a; margin: auto; background-color: #fff;}
+  .tab_li ul{width: 100%; height: 100%; text-align: center;}
+  .tab_li ul li{position: relative; display: inline-block; margin: 0 2rem; width: auto; height: 100%;}
+  .tab_li ul li:after{
+    content: " "; display: block; position: absolute; right: -2rem; top:10%;
+     width: 1px; height: 80%; background-color: #333;
+    }
+  .tab_li ul li:last-child:after{display: none;}  
+  .tab_li a{display: block; width: 120px; height: 100%; line-height: 40px; }
+
+  .tab_content{width: 90%; height: 500px; margin: auto; margin-top: 2rem; padding: 1rem; box-sizing: border-box; border: 1px solid #333;  }  
+  .tab_content div{display: none; width: 100%; height: 100%; padding: 1rem; box-sizing: border-box; background-color: #fff;}
+  .tab_content .tab_con_01{display: block;} 
+/* conBox_02 */
 #conBox_02{
-  width: 100%; height: 500px; border-bottom: 1px solid #07a; background-color: #faa; 
+  width: 100%; height: 1200px; border-bottom: 1px solid #07a; background-color: #faa; 
   margin-top: 2rem;
 }
+  .title_tab_style{
+    width: 80%; height: 700px; margin: auto; 
+    box-sizing: border-box; border: 1px solid #333; padding: 1rem; }
+  .title_tab_style dl{position: relative; width: 100%; height: 100%; background-color:rgba(255,255,255,0.7);}
+  .title_tab_style dt{
+    float: left; width: 250px; height: 30px; margin-left: 0.1rem;
+    line-height: 40px; text-transform: uppercase; text-indent: 1rem; background-color: #ccc;
+  }
+  .title_tab_style dt:first-of-type{margin-left: 0;}
+  .title_tab_style dt.action{background-color: #039; color:#fff;}
+  .title_tab_style dt > a{
+    display: block; width: 100%; height: 100%; 
+    font-size: 1.3rem;
+  }  
+  .title_tab_style dd{display: none; position: absolute; top: 50px; left: 0; width: 100%; height: auto; min-height: 400px;}  
+  .title_tab_style dd:first-of-type{display: block;}  
+
 .top_move_btn{position: fixed; right: 1rem; bottom:3rem; width: 7rem; height: 3.125rem; 
   text-align: center; line-height: 3.125rem;
   background-color: #333; color:#fff} 
