@@ -1,0 +1,147 @@
+/* 1024px.css */
+@media screen and (min-width:481px) and (max-width:1024px){
+  #headBox{position: relative; z-index: 1000; width: 100%; height: 200px; padding-top: 50px; box-sizing: border-box; background-color: #fff;}
+  h1 {float: left; width: 200px; height: 80px; margin-left: 40px;}
+  h1 a{
+    display: block; width: 100%; height: 100%;
+    background-image: url("../../../img/logo/logo_big.png");
+    background-repeat: no-repeat; background-position: 50% 50%;
+    background-size: contain;
+   }
+  #gnbBox{float: right; width: 570px; height: 50px; margin: 20px 96px 0 0;}
+  .gnb_close{display: none;}
+  .gnb_area{width: 100%; height: 100%;}
+  .gnb_main_menu{float: left; width: 540px; height: 100%;}
+  .gnb_main_menu>li{
+    float: left; width: 120px; height: 100%; 
+    text-align: center; font-weight: bold; font-size: 20px; margin-right: 20px;
+  }
+  .gnb_main_menu>li:last-of-type{margin-right: 0;}
+  .gnb_main_menu>li.action a{color: #02396d;}
+  .gnb_sub_menu{display: none; width: 100%; height: auto; min-height: 100px; margin-top: 2px; border: 2px solid #989898;
+    box-sizing: border-box; background-color: #fff;  }
+  .gnb_sub_menu>li{width: 100px; height: 20px; margin-bottom: 10px;}
+  .gnb_sub_menu>li>a{
+    width: 80%; height: 100%; font-size: 16px; text-align: center; margin-top: 10px; margin-left: 20%;
+  }
+ /*//headBox-------------------------------------------------  */
+
+  #viewBox{position: relative; width: 100%; height: 400px; background-color: #fef;}
+  .view_area{width: 100%; height: 100%; overflow: hidden;}
+  .view_area .view_con{width: 300%; height: 100%;}
+  .view_con li{float: left; width: 33.333334%; height: 100%;}
+  .view_con li > a{    
+    display: block; width: 100%; height: 100%; 
+    background-position: 50% 50%; background-repeat: no-repeat;
+  }
+  .view_img_01 > a{background-image: url("../../../img/main/view/1024_view_add_01.png");}
+  .view_img_02 > a{background-image: url("../../../img/main/view/1024_view_add_02.png");}
+  .view_img_03 > a{background-image: url("../../../img/main/view/1024_view_add_03.png");}
+  
+  .view_indicator{ 
+    position: absolute; left: 50%; bottom: 20px; transform: translateX(-50%); 
+    width: 164px; height: 40px;
+  }
+  .view_indicator li{
+    float: left; width: 40px; height: 100%; border-radius: 100%; 
+    margin-right: 20px; background-color: #fff;
+  }
+  .view_indicator li a{display: block; width: 100%; height: 100%;}
+  .view_indicator li.action{background-color: #0063b4;}
+  .view_indicator li:last-child{margin-right: 0;}
+/* //viewBox----------------------------------------- */
+  #advantagesBox{position: relative; width: 100%; max-width: 1024px; height: 600px; padding-top: 50px; box-sizing: border-box; background-color: #fff;}
+    #advantagesBox h2{
+      width: 236px; height: 60px; color: #02396d; 
+      font-size: 30px; font-weight: bold; margin: auto; text-align: center;
+    } 
+    #advantagesBox ul{width: 100%; height: 100%;}
+    .next_btn{
+      position: absolute; top: 50%; right: 100px; z-index: 100;
+      width: 38px; height: 56px;
+    }
+    .next_btn button{width: 100%; height: 100%; 
+      background-image: url("../../../img/main/content/incator_icon.png");
+      background-repeat: no-repeat; background-position: 50% 50%;
+    }
+
+    .advantages_img_01{
+      position: absolute; top: 170px; left: 50%; transform: translateX(-50%); z-index: 50;
+      width: 58.59375vw; height:374px;  margin: auto; box-shadow: 2px 2px 5px 5px #989898;
+      background-image: url("../../../img/main/content/1024_content_img_01.png");
+      background-repeat: no-repeat; background-position: 50% 50%;
+    }
+    .advantages_img_01 span{
+      display: block; width: 100%; height: 100px; margin-top: 275px;
+      color: #fff; font-size: 20px; font-weight: bold; text-align: center; line-height: 100px;
+      background-color: rgba(103, 103, 103, 0.7);
+    }
+    .advantages_img_02{
+      position: absolute; top: 170px; left: 50%; transform: translateX(-50%); z-index: 40;
+      width: 58.59375vw; height:374px;  margin: auto; box-shadow: 2px 2px 5px 5px #989898;
+      background-image: url("../../../img/main/content/1024_content_img_02.png");
+      background-repeat: no-repeat; background-position: 50% 50%;
+    }
+    .advantages_img_02 span{
+      display: block; width: 100%; height: 100px; margin-top: 275px;
+      color: #fff; font-size: 20px; font-weight: bold; text-align: center; line-height: 100px;
+      background-color: rgba(103, 103, 103, 0.7);
+    }
+    /* //#advantagesBox---------------------------------------- */
+  #promptionBox{ width: 100%; max-width: 1024px; height: 600px; background-color: #fff;}
+  #promptionBox h2{
+    width: 236px; height: 60px; color: #02396d; 
+    font-size: 30px; font-weight: bold; margin: auto; text-align: center;
+  } 
+    .video_area{width: 100%; height: 100%;}
+    .video_con {
+      position: relative;
+      width: 58.59375vw; height: 400px; margin: auto; border: 1px solid #313131; box-sizing: border-box;
+      margin-top: 30px; background-image: url("../../../img/main/video/10024_video_img.png");
+      background-repeat: no-repeat; background-position: 50% 50%;
+    }
+    .video_text{display: none;}
+    .video_btn{
+      position: absolute; top: 50%; left: 50%; transform: translateX(-50%);
+      width: 42px; height: 42px;
+    }
+    .video_btn button{
+      width: 100%; height: 100%;
+      background-image: url("../../../img/main/video/play_btn.png");
+      background-repeat: no-repeat; background-position: 50% 50%;
+    }
+    .video_btn button:hover{background-image: url("../../../img/main/video/play_btn_hover.png");}
+/* //promptionBox----------------------------------------------- */  
+  #reviewBox{position: relative; padding-top: 40px; max-width: 1024px; box-sizing: border-box; width: 100%; height: 300px; background-color: #fff;}
+  .instagram_icon{
+    position: absolute; top: 0; right: 140px;
+    width: 40px; height: 40px;
+  }
+  .instagram_icon a{      
+    width: 100%; height: 100%;
+    background-image: url("../../../img/main/review/instagram_icon.png");
+    background-repeat: no-repeat; background-position: 50% 50%;
+  }
+  .review_area{width: 100%; height: 100%;}
+  .review_area ul{width: 100%; height: 100%; text-align: center;}
+  .review_area ul li{
+    display: inline-block; width: 14.648437vw; height: 150px; margin-left: 5.859375vw; margin-top: 30px;
+    background-repeat: no-repeat; background-position: 50% 50%;
+  }
+  .review_area ul li:nth-child(1){margin-left: 0; background-image: url("../../../img/main/review/instagram_img_01.png");}
+  .review_area ul li:nth-child(2){background-image: url("../../../img/main/review/instagram_img_02.png");}
+  .review_area ul li:nth-child(3){background-image: url("../../../img/main/review/instagram_img_03.png");}
+  .review_area ul li:nth-child(4){background-image: url("../../../img/main/review/instagram_img_04.png");}
+/*//review-------------------------------------------------------------------  */
+  #footBox{width: 100%; height: 200px; padding: 40px 50px; box-sizing: border-box; color:#989898; background-color: #313131;}
+
+    #footBox address{float: left; width: 230px; height: 108px;}
+    .ect_area{float: right; width: 162px; height: 120px;}
+    .ect_area a{
+      width: 70px; height: 40px; float: left; 
+      background-repeat: no-repeat; background-position: 50% 50%;
+    }
+    .ect_area a:nth-child(2){margin-right: 10px; background-image: url("../../../img/foot/login.png");}
+    .ect_area a:nth-child(3){background-image: url("../../../img/foot/link_page.png");}
+    .foot_text{float: left; width: 230px; height: 20px; margin-top: 100px; margin-left: 120px;}
+  }
