@@ -3,7 +3,7 @@
 (function($){
   var nowW = deviceSize();
   // console.log(nowW);
-  var deviceType = ['mobile', 'table', 'laptop', 'pc', 'pcfull'];
+  var deviceType = ['mobile', 'tablet', 'laptop', 'pc', 'pcfull'];
 // ---------------------------------------------------------------------
   var url = './rwdTemp/';
   var headBox = $('#headBox');
