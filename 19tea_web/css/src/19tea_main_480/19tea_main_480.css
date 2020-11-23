@@ -1,10 +1,11 @@
 /* 480px.css */
 @media screen and (min-width:280px) and (max-width:480px){
   #wrap{position: relative;}
-  /* #wrap::before{content: " "; display: block; position: absolute; top: 0; left: 0; z-index: 10; width: 100%; height: 2000px; background-color: rgba(90, 90, 90, 0.6);}  */
+  #wrap.wrap_dark::before{content: " "; display: block; position: absolute; top: 0; left: 0; z-index: 1500;
+     width: 100%; height: 2000px; background-color: rgba(90, 90, 90, 0.6);}
 
-  #headBox{ width: 100%; height: 100%; background-color: #fff;}
-    h1 {width: 150px; height: 60px; margin-left: 40px;}
+  #headBox{ width: 100%; height: 100%; padding: 20px; box-sizing: border-box; background-color: #fff;}
+    h1 {width: 150px; height: 60px; margin-left: 20px;}
     h1 a{
       display: block; width: 100%; height: 100%;
       background-image: url("../../../img/logo/logo_480.png");
@@ -12,13 +13,18 @@
       background-size: contain;
      }
      #gnbBox{
-       width: 40px; height: 40px; margin-left: 40px;
-       background-image: url("../../../img/menu/menu_icon.png");
-       background-repeat: no-repeat; background-position: 50% 50%;
-       background-size: contain;
+       width: 40px; height: 40px; margin-left: 20px;
+      }
+      .gnb_button{
+        width: 100%; height: 100%;
+      }
+      .gnb_button button{  
+        width: 100%; height: 100%;
+        background-image: url("../../../img/menu/menu_icon.png");
+        background-repeat: no-repeat; background-position: 50% 50%;
       }
     .gnb_area{ display: none;
-      position: absolute; left: 0; top: 0; z-index: 1000; padding: 30px; box-sizing: border-box;
+      position: absolute; left: 0; top: 0; z-index: 2000; padding: 30px; box-sizing: border-box;
       width: 72.916666vw; height: 650px; background-color: #02396d;}
       .gnb_main_menu{width: 58.333333vw; height: auto; min-height: 500px; color:#fff;}
       .gnb_main_menu>li{width: 100%; height: auto; font-size: 1.25rem; margin-bottom: 20px;}
@@ -50,7 +56,7 @@
       margin-right: 20px; background-color: #fff;
     }
     .view_indicator li a{display: block; width: 100%; height: 100%;}
-    .view_indicator li.action{background-color: #0063b4;}
+    .view_indicator li.action {background-color: #0063b4;}
     .view_indicator li:last-child{margin-right: 0;}
 /* //viewBox----------------------------------------- */
   #advantagesBox{width: 100%; max-width: 480px; height: 800px; padding: 50px 20px; box-sizing: border-box; background-color: #fff;}
