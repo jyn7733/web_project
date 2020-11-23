@@ -16,18 +16,17 @@
   var win = $(window);
   var sizeWin = win.outerWidth(true);
 
-  console.log(sizeWin);
   if(sizeWin <= 480){
     menuBtn.on('click',['button'],function(e){
       e.preventDefault();
-      gnbArea.show();
+      gnbArea.stop().fadeIn();
       gnbArea.css({'position' : 'fixed'})
       wrap.addClass('wrap_dark');
     });
 
     gnbCloes.on('click',function(e){
       e.preventDefault();
-      gnbArea.remove();
+      gnbArea.stop().fadeOut();
       wrap.removeClass('wrap_dark');
     });
   }else{
