@@ -39,18 +39,9 @@
   /*//headBox-------------------------------------------------  */
   #viewBox{position: relative; width: 100%; height: 200px; background-color: #fef;}
     .view_area{width: 100%; height: 100%; overflow: hidden;}
-    .view_area .view_con{width: 300%; height: 100%;}
-    .view_con li{float: left; width: 33.333334%; height: 100%;}
-    .view_con li > a{    
-      display: block; width: 100%; height: 100%; 
-      background-position: 50% 50%; background-repeat: no-repeat;
-    }
-    .view_img_01 > a{background-image: url("../../../img/main/view/480_view_add_01.png");}
-    .view_img_02 > a{background-image: url("../../../img/main/view/480_view_add_02.png");}
-    .view_img_03 > a{background-image: url("../../../img/main/view/480_view_add_03.png");}
-    
+  
     .view_indicator{ 
-      position: absolute; left: 50%; bottom: 20px; z-index: 500; transform: translateX(-50%); 
+      position: absolute; left: 50%; bottom: 20px; z-index: 1000; transform: translateX(-50%); 
       width: 100px; height: 20px;
     }
     .view_indicator li{
@@ -60,6 +51,17 @@
     .view_indicator li a{display: block; width: 100%; height: 100%;}
     .view_indicator li.action {background-color: #0063b4;}
     .view_indicator li:last-child{margin-right: 0;}
+
+    .view_area .view_con{width: 300%; height: 100%;}
+    .view_con li{float: left; width: 33.333334%; height: 100%;}
+    .view_con li > a{    
+      display: block; width: 100%; height: 100%; 
+      background-position: 50% 50%; background-repeat: no-repeat;
+    }
+    .view_img_01 > a{background-image: url("../../../img/main/view/480_view_add_01.png");}
+    .view_img_02 > a{background-image: url("../../../img/main/view/480_view_add_02.png");}
+    .view_img_03 > a{background-image: url("../../../img/main/view/480_view_add_03.png");}
+
 /* //viewBox----------------------------------------- */
   #advantagesBox{width: 100%; max-width: 480px; height: 800px; padding: 50px 20px; box-sizing: border-box; background-color: #fff;}
     #advantagesBox h2{
@@ -134,14 +136,14 @@
     .review_area ul li:nth-child(3){display: none;}
     .review_area ul li:nth-child(4){display: none;}
 /*//reveiwBox-----------------------------------------------------  */
-  #footBox{width: 100%; height: 200px; padding: 40px 10px; box-sizing: border-box; color:#989898; background-color: #313131;}
-    #footBox address{float: left; width: 230px; height: 108px;}
-    .ect_area{float: right; width: 162px; height: 120px;}
+  #footBox{position: relative; width: 100%; height: 200px; padding: 40px 10px; box-sizing: border-box; color:#989898; background-color: #313131;}
+    #footBox address{float: left; width: 47.916666vw; height: 108px; font-size: 12px;}
+    .ect_area{float: right; width: 33.75vw; height: 120px;}
     .ect_area a{
-      width: 70px; height: 40px; float: left; 
-      background-repeat: no-repeat; background-position: 50% 50%;
+      width: 14.5833333333vw; height: 40px; float: left; 
+      background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
     }
     .ect_area a:nth-child(2){margin-right: 10px; background-image: url("../../../img/foot/login.png");}
     .ect_area a:nth-child(3){background-image: url("../../../img/foot/link_page.png");}
-    .foot_text{float: left; width: 230px; height: 20px; margin-top: 20px; margin-left: 120px;}
+    .foot_text{position: absolute; top: 70%; left: 50%;  transform: translateX(-50%); width: 47.916666vw; height: 20px;}
 }

@@ -28,6 +28,17 @@
  /*//headBox-------------------------------------------------  */
   #viewBox{position: relative; width: 100%; height: 500px;}
   .view_area{width: 100%; height: 100%; overflow: hidden;}
+  .view_indicator{ 
+    position: absolute; left: 50%; bottom: 20px; z-index: 1000; transform: translateX(-50%); 
+    width: 164px; height: 40px;
+  }
+  .view_indicator li a{display: block; width: 100%; height: 100%;}
+  .view_indicator li{
+    float: left; width: 40px; height: 100%; border-radius: 100%; 
+    margin-right: 20px; background-color: #fff;
+  }
+  .view_indicator li.action{background-color: #0063b4;}
+  .view_indicator li:last-child{margin-right: 0;}
   .view_area .view_con{width: 300%; height: 100%;}
   .view_con li{float: left; width: 33.333334%; height: 100%;}
   .view_con li > a{    
@@ -38,54 +49,50 @@
   .view_img_02 > a{background-image: url("../../../img/main/view/1920_view_add_02.png");}
   .view_img_03 > a{background-image: url("../../../img/main/view/1920_view_add_03.png");}
   
-  .view_indicator{ 
-    position: absolute; left: 50%; bottom: 20px; z-index: 500; transform: translateX(-50%); 
-    width: 164px; height: 40px;
-  }
-  .view_indicator li a{display: block; width: 100%; height: 100%;}
-  .view_indicator li{
-    float: left; width: 40px; height: 100%; border-radius: 100%; 
-    margin-right: 20px; background-color: #fff;
-  }
-  .view_indicator li.action{background-color: #0063b4;}
-  .view_indicator li:last-child{margin-right: 0;}
+
 /* //viewBox----------------------------------------- */
-#advantagesBox{position: relative; width: 100%; height: 800px; padding-top:50px ; box-sizing: border-box; background-color: #fff;}
+#advantagesBox{width: 100%; max-width: 1920px; height: 800px; padding-top:50px ; box-sizing: border-box; background-color: #fff;}
 #advantagesBox h2{
   width: 236px; height: 60px; color: #02396d; 
   font-size: 30px; font-weight: bold; margin: auto; text-align: center;
 } 
-.advantages_area{width: 100%; height: 100%;}
-#advantagesBox ul{width: 100%; height: 100%;}
-.next_btn{
-  position: absolute; top: 50%; right: 300px; z-index: 100;
-  width: 38px; height: 56px;
+.advantages_area{position: relative; width: 51.6666666667vw; max-width: 996px; height: 500px; margin: auto; margin-top: 50px;} 
+.advantages_con{width: 900px; height: 100%; box-shadow: 2px 2px 5px 5px #989898;
+  box-sizing: border-box; padding:0.5rem;}
+.advantages_con ul{position: relative; width: 100%; height: 100%;}
+.advantages_con ul li{
+  position: absolute; z-index: 50;
+  width: 100%; height: 100%; background-size: cover;
+  background-repeat: no-repeat; background-position: 50% 50%;
 }
-.next_btn button{width: 100%; height: 100%; 
+.advantages_con ul li span{
+  display: block; position: absolute; left: 0; bottom: 0; width: 100%; height:auto; 
+  color: #fff; font-size: 20px; font-weight: bold; text-align: center; 
+  line-height:1.2; padding:1rem 0;
+   /* background-color: rgba(103, 103, 103, 0.7); */
+   background-color: rgba(51, 51, 51, 0.8);
+}
+.advantages_con li.action {z-index: 100;}
+
+.next_btn{
+  /* position: absolute; top: 50%; right: 100px; z-index: 100; */
+  float: right; width: 4.79166666667vw; max-width: 96px; height: 100%;
+}
+.next_btn button{width: 38px; height: 56px; margin-left: 2.08333333333vw; margin-top: 188px;
   background-image: url("../../../img/main/content/incator_icon.png");
   background-repeat: no-repeat; background-position: 50% 50%;
 }
 
-.advantages_img_01{position: absolute; top: 170px; left: 50%; transform: translateX(-50%); z-index: 50;
-  width: 900px; height:500px;  margin: auto;  box-shadow: 2px 2px 5px 5px #989898;
+.advantages_img_01{
+  position: absolute; z-index: 50;
   background-image: url("../../../img/main/content/big_content_img_01.png");
-  background-repeat: no-repeat; background-position: 50% 50%;
+  
 }
-.advantages_img_01 span{
-  display: block; width: 100%; height: 100px; margin-top: 400px;
-  color: #fff; font-size: 20px; font-weight: bold; text-align: center; line-height: 100px;
-  background-color: rgba(103, 103, 103, 0.7);
-}
-.advantages_img_02{ position: absolute; top: 170px; left: 50%; transform: translateX(-50%); z-index: 40;
-  width: 900px; height:500px;  margin: auto; box-shadow: 2px 2px 5px 5px #989898;
+
+.advantages_img_02{
   background-image: url("../../../img/main/content/big_content_img_02.png");
-  background-repeat: no-repeat; background-position: 50% 50%;
 }
-.advantages_img_02 span{
-  display: block; width: 100%; height: 100px; margin-top: 400px;
-  color: #fff; font-size: 20px; font-weight: bold; text-align: center; line-height: 100px;
-  background-color: rgba(103, 103, 103, 0.7);
-}
+
 /* //advantagesBox------------------------------------------------ */
   #promptionBox{position: relative; width: 100%; height: 700px; padding-top: 50px; box-sizing: border-box; background-color: #fff;}
   #promptionBox h2{
@@ -95,13 +102,13 @@
     .video_area{width: 100%; height: 100%;}
     .video_con {
       float: left; margin-left: 420px;
-      width: 36.4583333333vw; height: 400px; border: 1px solid #313131; box-sizing: border-box;
+      width: 36.4583333333vw; max-width: 700px; height: 400px; border: 1px solid #313131; box-sizing: border-box;
       margin-top: 80px; background-image: url("../../../img/main/video/big_video_img.png");
       background-repeat: no-repeat; background-position: 50% 50%;
     }
     .video_text{
       float: left; margin-left: 1.5625vw; padding: 10px; box-sizing: border-box; margin-top: 80px; 
-      width: 18.8541666667vw; height: 400px; box-shadow: 2px 2px 3px 3px #989898;;
+      width: 18.8541666667vw; max-width: 362px; height: 400px; box-shadow: 2px 2px 3px 3px #989898;;
     }
       .video_text ul{width: 100%; height: 100%;}
       .video_text ul li{
@@ -146,14 +153,14 @@
   .review_area ul li:nth-child(3){background-image: url("../../../img/main/review/big_instagram_img_03.png");}
   .review_area ul li:nth-child(4){background-image: url("../../../img/main/review/big_instagram_img_04.png");}
 /*//review-------------------------------------------------------------------  */
-#footBox{width: 100%; height: 200px;padding: 40px 120px; box-sizing: border-box; color:#989898; background-color: #313131;}
-    #footBox address{float: left; width: 230px; height: 108px;}
-    .ect_area{float: right; width: 162px; height: 120px;}
+#footBox{position: relative; width: 100%; height: 200px;padding: 40px 120px; box-sizing: border-box; color:#989898; background-color: #313131;}
+    #footBox address{float: left; width: 11.979166vw; height: 108px; font-size: 12px;}
+    .ect_area{float: right; width: 8.4375vw; height: 120px;}
     .ect_area a{
-      width: 70px; height: 40px; float: left; 
-      background-repeat: no-repeat; background-position: 50% 50%;
+      width: 3.64583333333vw; height: 40px; float: left; 
+      background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
     }
     .ect_area a:nth-child(2){margin-right: 10px; background-image: url("../../../img/foot/login.png");}
     .ect_area a:nth-child(3){background-image: url("../../../img/foot/link_page.png");}
-    .foot_text{float: left; width: 230px; height: 20px; margin-top: 100px; margin-left: 500px;}
+    .foot_text{position: absolute; top: 70%; left: 50%;  transform: translateX(-50%); width: 11.979166vw; height: 20px; }
   }

@@ -27,6 +27,18 @@
  /*//headBox-------------------------------------------------  */
   #viewBox{position: relative; width: 100%; height: 500px; background-color: #fef;}
   .view_area{width: 100%; height: 100%; overflow: hidden;}
+  .view_indicator{ 
+    position: absolute; left: 50%; bottom: 20px; z-index: 1000; transform: translateX(-50%); 
+    width: 164px; height: 40px;
+  }
+  .view_indicator li{
+    float: left; width: 40px; height: 100%; border-radius: 100%; 
+    margin-right: 20px; background-color: #fff;
+  }
+  .view_indicator li a{display: block; width: 100%; height: 100%;}
+  .view_indicator li.action{background-color: #0063b4;}
+  .view_indicator li:last-child{margin-right: 0;}
+
   .view_area .view_con{width: 300%; height: 100%;}
   .view_con li{float: left; width: 33.333334%; height: 100%;}
   .view_con li > a{    
@@ -37,26 +49,30 @@
   .view_img_02 > a{background-image: url("../../../img/main/view/1440_view_add_02.png");}
   .view_img_03 > a{background-image: url("../../../img/main/view/1440_view_add_03.png");}
   
-  .view_indicator{ 
-    position: absolute; left: 50%; bottom: 20px; z-index: 500; transform: translateX(-50%); 
-    width: 164px; height: 40px;
-  }
-  .view_indicator li{
-    float: left; width: 40px; height: 100%; border-radius: 100%; 
-    margin-right: 20px; background-color: #fff;
-  }
-  .view_indicator li a{display: block; width: 100%; height: 100%;}
-  .view_indicator li.action{background-color: #0063b4;}
-  .view_indicator li:last-child{margin-right: 0;}
+
 /* //viewBox----------------------------------------- */
   #advantagesBox{width: 100%; max-width: 1440px; height: 800px; padding-top:50px ; box-sizing: border-box; background-color: #fff;}
   #advantagesBox h2{
     width: 236px; height: 60px; color: #02396d; 
     font-size: 30px; font-weight: bold; margin: auto; text-align: center;
   } 
-  .advantages_area{position: relative; width: 68.8888888889vw; height: 500px; margin: auto; margin-top: 50px;} 
-  .advantages_con{width: 900px; height: 100%;}
-  .advantages_con ul{width: 100%; height: 100%;}
+  .advantages_area{ width: 68.8888888889vw; height: 500px; margin: auto; margin-top: 50px;} 
+  .advantages_con{width: 900px; height: 100%; box-shadow: 2px 2px 5px 5px #989898;
+    box-sizing: border-box; padding:0.5rem;}
+  .advantages_con ul{position: relative; width: 100%; height: 100%;}
+  .advantages_con ul li{
+    position: absolute; z-index: 50;
+    width: 100%; height: 100%; background-size: cover;
+    background-repeat: no-repeat; background-position: 50% 50%;
+  }
+  .advantages_con ul li span{
+    display: block; position: absolute; left: 0; bottom: 0; width: 100%; height:auto; 
+    color: #fff; font-size: 20px; font-weight: bold; text-align: center; 
+    line-height:1.2; padding:1rem 0;
+     /* background-color: rgba(103, 103, 103, 0.7); */
+     background-color: rgba(51, 51, 51, 0.8);
+  }
+  .advantages_con li.action {z-index: 100;}
   .next_btn{
     /* position: absolute; top: 50%; right: 100px; z-index: 100; */
     float: right; width: 6.38888888889vw; height: 100%;
@@ -68,26 +84,27 @@
 
   .advantages_img_01{
     position: absolute; z-index: 50;
-    width: 62.5vw; height:500px;  margin: auto; box-shadow: 2px 2px 5px 5px #989898;
+    /* width: 62.5vw; height:500px;  margin: auto; box-shadow: 2px 2px 5px 5px #989898; */
     background-image: url("../../../img/main/content/big_content_img_01.png");
-    background-repeat: no-repeat; background-position: 50% 50%;
+    /* background-repeat: no-repeat; background-position: 50% 50%; */
   }
-  .advantages_img_01 span{
+  /* .advantages_img_01 span{
     display: block; width: 100%; height: 100px; margin-top: 400px;
     color: #fff; font-size: 20px; font-weight: bold; text-align: center; line-height: 100px;
     background-color: rgba(103, 103, 103, 0.7);
-  }
+  } */
   .advantages_img_02{
-    position: absolute; z-index: 40;
-    width: 62.5vw; height:500px;  margin: auto; box-shadow: 2px 2px 5px 5px #989898;
+    /* position: absolute; z-index: 40;
+    width: 62.5vw; height:500px;  margin: auto; box-shadow: 2px 2px 5px 5px #989898; */
     background-image: url("../../../img/main/content/big_content_img_02.png");
-    background-repeat: no-repeat; background-position: 50% 50%;
+    /* background-repeat: no-repeat; background-position: 50% 50%; */
   }
-  .advantages_img_02 span{
+  /* .advantages_img_02 span{
     display: block; width: 100%; height: 100px; margin-top: 400px;
     color: #fff; font-size: 20px; font-weight: bold; text-align: center; line-height: 100px;
     background-color: rgba(103, 103, 103, 0.7);
-  }
+  } */
+
   /* //advantagesBox------------------------------------------------ */
   #promptionBox{width: 100%; max-width: 1440px; height: 700px; padding-top: 40px; box-sizing: border-box; background-color: #fff;}
   #promptionBox h2{
@@ -148,15 +165,15 @@
   .review_area ul li:nth-child(3){background-image: url("../../../img/main/review/big_instagram_img_03.png");}
   .review_area ul li:nth-child(4){background-image: url("../../../img/main/review/big_instagram_img_04.png");}
 /*//review-------------------------------------------------------------------  */
-#footBox{width: 100%; height: 200px;padding: 40px 80px; box-sizing: border-box; color:#989898; background-color: #313131;}
+#footBox{position: relative; width: 100%; height: 200px;padding: 40px 80px; box-sizing: border-box; color:#989898; background-color: #313131;}
 
-    #footBox address{float: left; width: 230px; height: 108px;}
-    .ect_area{float: right; width: 162px; height: 120px;}
+    #footBox address{float: left; width: 15.9722222vw; height: 108px; font-size: 12px;}
+    .ect_area{float: right; width: 11.25vw; height: 120px;}
     .ect_area a{
-      width: 70px; height: 40px; float: left; 
-      background-repeat: no-repeat; background-position: 50% 50%;
+      width: 4.86111111111vw; height: 40px; float: left; 
+      background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
     }
     .ect_area a:nth-child(2){margin-right: 10px; background-image: url("../../../img/foot/login.png");}
     .ect_area a:nth-child(3){background-image: url("../../../img/foot/link_page.png");}
-    .foot_text{float: left; width: 230px; height: 20px; margin-top: 100px; margin-left: 300px;}
+    .foot_text{position: absolute; top: 70%; left: 50%;  transform: translateX(-50%); width: 15.9722222vw; height: 20px;}
   }

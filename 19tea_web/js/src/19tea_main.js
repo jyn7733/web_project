@@ -48,19 +48,118 @@
 var viewBox = $('#viewBox');
 var viewArea = viewBox.children('.view_area');
 var viewCon = viewArea.children('.view_con');
+var viewLi = viewCon.children('li');
 var viewIndi = viewArea.children('.view_indicator');
 var viewIndiLi = viewIndi.children('li');
 
-viewIndiLi.on('click',['a'],function(e){
+var timed = 3000;
+viewIndiLi.children('a').on('click focus',function(e){
+  e.preventDefault();
   var it = $(this);
-  var itI = it.index();
-  viewCon.animate({marginLeft : -100 * itI + '%'});
+  var itI = it.parent('li').index();
   viewIndiLi.eq(itI).siblings().removeClass('action');
   viewIndiLi.eq(itI).addClass('action'); 
+  if(e.type === 'focus'){
+    viewCon.stop().animate({marginLeft : -100 * itI + '%'});
+  // setTimeout(function(){viewCon.stop().animate({marginLeft : -100 * itI + '%'})},timed); 
+
+  }else if(e.type === 'click'){
+    viewCon.stop().animate({marginLeft : -100 * itI + '%'});
+    // setTimeout(function(){viewCon.stop().animate({marginLeft : -100 * itI + '%'})},timed); 
+  }
 })
 
+var i =0;
+var startInterval;
+var Start = function(){
+  startInterval = setInterval(function(){
+  i+=1;
+  viewIndiLi.eq(i).siblings().removeClass('action');
+  viewIndiLi.eq(i).addClass('action');  
+  viewCon.stop().animate({marginLeft : -100 * i + '%'}); 
+
+  if(i > 2){
+    i=0;
+    viewCon.stop().animate({marginLeft : -100 * i + '%'});
+    viewIndiLi.eq(i).siblings().removeClass('action');
+    viewIndiLi.eq(i).addClass('action');   
+  }
+  },timed); 
+}
+Start();
+
+var StopSlide = function(){
+  clearInterval(startInterval);
+};
+
+//viewBox 에서 마우스가 머물거나 벗어났을 때 처리
+// viewBox.on('mouseenter', function(){
+//   clearInterval(startInterval);
+//   StopSlide();
+// });
+
+// viewBox.on('mouseleave', function(){
+//   Start();
+// });
+
+//위의 처리 내용을 배열화하여 처리
+viewBox.on({
+  'mouseenter': StopSlide,
+  'mouseleave': Start
+});
+
+//------------------------------------------------------------------------------
 //advantagesBox contents button fadeOut
+var advantagesBox =$('#advantagesBox');
+var advantagesArea = advantagesBox.children('.advantages_area');
+var aConNextBtn = advantagesArea.find('button');
+var advantagesCon = advantagesArea.children('.advantages_con');
+var aConUl = advantagesCon.children('ul');
+var aConLi = aConUl.children('li');
+var selN = 0;
+var timeout = 10;
+
+var selectLiN = function(){ 
+  var nn = aConUl.children('.action').index();
+  console.log( nn);
+  return nn;
+};
+
+aConLi.hide();
+aConLi.eq(selN).show().addClass('action');
+var permission = true;
+aConNextBtn.on('click',function(e){
+  e.preventDefault();
+  if(permission){
+    permission = false;
+    selN += 1;
+    if(selN >=  aConLi.length){
+      selN = 0;
+    }
+    // console.log( selN );
+    
+    aConLi.eq(selN).stop().show(function(){
+      aConLi.eq( selectLiN() ).stop().fadeOut(function(){
+        aConLi.removeClass('action');
+        aConLi.eq(selN).addClass('action');
+        setTimeout(function(){
+          permission = true;
+        }, timeout);
+      });    
+    });
+  }
+
+  // aConLi.eq(0).fadeToggle(function(){
+  //   var aConLiD = aConLi.eq(0).css('z-index');
+  //   if(aConLiD === 50){
+  //     aConLi.eq(0).addClass('hide');
+  //     aConLi.eq(0).siblings().removeClass('hide');
+  //   }else if(aConLiD !== 0){
+  //     aConLi.eq(0).removeClass('hide');
+  //   }
+  // })
+});
 
 
 
-})(jQuery);
+})(jQuery); 
