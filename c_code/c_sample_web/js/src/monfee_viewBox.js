@@ -81,11 +81,6 @@
   var prevSlideBtn = slideBtn.children('button').eq(1);//이전
 
 
-
-
-
-
-  
   var slideN = 0;//최초의 값
   var timed = 1000; //일정시간마다 처리하게 하는 시간
 
