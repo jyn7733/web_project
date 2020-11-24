@@ -24,7 +24,7 @@
       </nav>
     </header>
     <section id="viewBox">
-      <h2>광고영역</h2>
+      <h2 class="hidden_context" >광고영역</h2>
       <div class="view_link">
           <ul class="indicator">
             <li><a href="#"><span class="hidden_context">인디케이터_01</span></a></li>
@@ -35,24 +35,36 @@
           </ul>
           <div class="btn_area">
             <div class="next_btn">
-              <button type="button"><span class="hidden_context">다음</span></button>
+              <button type="button">
+                <span class="hidden_context">다음</span>
+                <!-- <i class="fas fa-angle-right"></i> -->
+              </button>
             </div>
-            <div class="next_btn">
-              <button type="button"><span class="hidden_context">이전</span></button>
+            <div class="prev_btn">
+              <button type="button">
+                <span class="hidden_context">이전</span>
+                <!-- <i class="fas fa-angle-left"></i> -->  
+              </button>
             </div>
           </div>  
-        </div>  
-        <ul class="view_img">
-          <li><a href="#"><span>광고이미지_01</span></a></li>
-          <li><a href="#"><span>광고이미지_02</span></a></li>
-          <li><a href="#"><span>광고이미지_03</span></a></li>
-          <li><a href="#"><span>광고이미지_04</span></a></li>
-          <li><a href="#"><span>광고이미지_05</span></a></li>
+        </div> 
+        <div class="view_img"> 
+        <ul>
+          <li class="img_01"><a href="#"><span class="hidden_context">광고이미지_01</span></a></li>
+          <li class="img_02"><a href="#"><span class="hidden_context">광고이미지_02</span></a></li>
+          <li class="img_03"><a href="#"><span class="hidden_context">광고이미지_03</span></a></li>
+          <li class="img_04"><a href="#"><span class="hidden_context">광고이미지_04</span></a></li>
+          <li class="img_05"><a href="#"><span class="hidden_context">광고이미지_05</span></a></li>
         </ul>
     </section>
     <article id="conBox">
       <h2>콘텐츠 영역</h2>
     </article>
+    <div class="top_btn">
+      <div class="move_btn">
+        <a href="#wrap"><span>상단이동</span></a>
+      </div>
+    </div>
     <footer id="footBox">
       <h2>회사정보</h2>
     </footer>
