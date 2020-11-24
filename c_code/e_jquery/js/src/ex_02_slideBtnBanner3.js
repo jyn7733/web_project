@@ -38,10 +38,7 @@
 
   //indicator 클릭시 ul 이동 -> a에 focus 처리로 변경, 실제 배너에 a는 별도로 focus 처리
   indicatorLi.children('a').on('mouseenter focus click',function(e){
-    e.preventDefault();
-
-
-    
+    e.preventDefault();   
       var it = $(this);
       indiSlN = it.parent('li').index(); //a요소의 부보인 li의 index번호(순서)
       indicatorLi.eq(indiSlN).addClass('action')
@@ -53,15 +50,15 @@
         slideUl.stop().animate({'marginLeft': indiSlN * -100 + '%'}, timed);      
       }else if(e.type === 'click'){
         setTimeout(function(){
-        var thatLink = it.attr('href');
-        $(thatLink).attr({'tabIndex': 0});
+        var thatLink = it.attr('href'); //a의 href 속성을 가져옴
+        $(thatLink).attr({'tabIndex': 0}); //tab의 값을 0으로 만듬 즉 인식되지않도록함.????
         // $(thatLink).parent('li'.siblings().children('a').attr({'tabIndex': -1}))
         slideLi.eq(indiSlN).siblings().children('a').attr({'tabIndex': -1});
-        $(thatLink).focus(); 
+        $(thatLink).focus();//?????ㅔ??????에???? 
         },timed + 10);
       }; //indiLi.children('a').on('focus')
 
-      slideLi.find('a').on('blur', function(){
+      slideLi.find('a').on('blur', function(){//blur 포커스를 잃었을 때 즉 포커스가 빠져나가고난 뒤? 이벤트
         $(this).attr({'tabIndex' : -1});
       })
   })

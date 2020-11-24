@@ -41,7 +41,7 @@
     }
     // console.log(mWheel)
 
-    if(mWheel < 0 && count < pageOffset.length-1){//휠을 아래로 스크롤시
+    if(mWheel < 0 && count < pageOffset.length-1){//휠을 아래로 스크롤시 //
       count += 1;
     }else if(mWheel > 0 && count > 0){//휠을 위로 스크롤시
       count -= 1;
