@@ -1,0 +1,44 @@
+/* test_11_25.css */
+
+#wrap{position: relative; width: 100%; height: auto; min-height: 1000px; margin: auto;}
+
+#headBox{position: absolute; top:45px;  left: 50%; transform: translate(-50%); z-index: 1000; width: 80%; height: 90px; background-color:rgba(85, 85, 85, 0.5);}
+h1{float: left; width: 20%; height: 100%; background-color: #fff;}
+#navBox{float: right; width: 80%; height: 100%;}
+#navBox ul{width: 100%; height: 100%;}
+#navBox ul>li{float: left; width: 25%; height: 100%; color:#fff; text-align: center; line-height: 70px;}
+#navBox ul>li>a{display: block; width: 100%; height: 100%;}
+#navBox ul>li>a:hover,
+#navBox ul>li>a:focus{background-color: #ff0; color:#333;}
+
+#viewBox{position: relative; width: 100%; height: 100vh; background-color: #ff0;}
+  .view_link{
+    position: absolute; right: 120px; bottom: 50px; z-index: 500; width: 250px; height: 34px;
+    padding: 5px; box-sizing: border-box; border-radius: 20px; background-color: rgba(85, 85, 85, 0.5);;
+    }
+    .indicator{float: left; width:170px; height: 24px;}
+    .indicator > li{float: left; width: 24px; height: 100%; margin-right: 10px;}
+    .indicator > li a{display: block; width: 100%; height: 100%; border-radius: 100%; background-color:   #fff;}
+    .indicator > li.action a{background-color: #fe8;}
+
+    .btn_area{float: left; width: 58px; height: 24px; color:#fff;}
+    .next_btn{float: left; width: 24px; height: 100%;}
+    .next_btn button{width: 100%; height: 100%;}
+    .btn_area i{font-size: 24px; color: #fff;} 
+    .prev_btn{float: left; width: 24px; height: 100%; margin-right: 10px;}
+
+  .view_img{width: 100%; height: 100%; overflow: hidden;}
+  .view_img ul{position: relative; z-index: 100; width: 500%; height: 100%;}
+  .view_img ul li{float: left; width: 20%; height: 100%; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;}  
+    .img_01{background-image: url("../../img/dog/dog_01.jpg");}
+    .img_02{background-image: url("../../img/dog/dog_02.jpg");}
+    .img_03{background-image: url("../../img/dog/dog_03.jpg");}
+    .img_04{background-image: url("../../img/dog/dog_04.jpg");}
+    .img_05{background-image: url("../../img/dog/dog_05.jpg");}
+
+#conBox{width: 960px; max-width: 1600px; height: 1500px; margin: auto; background-color: #ccc;}
+
+.top_move{position: fixed; right: 320px; bottom:0; width: 100px; height: 100px; background-color: #888;}
+.top_move > a{display: block; width: 100%; height: 100%;}
+.top_move i {font-size: 80px; color:#fff;}
+#footBox{width: 960px; max-width: 1600px; height: 200px; margin: auto; background-color: #444;}
