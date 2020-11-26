@@ -8,7 +8,7 @@
     h1 {float: left; width: 150px; height: 60px; margin-left: 20px;}
     h1 a{
       display: block; width: 100%; height: 100%;
-      background-image: url("../../../img/logo/logo_480.png");
+      background-image: url("../../../../img/logo/logo_480.png");
       background-repeat: no-repeat; background-position: 50% 50%;
       background-size: contain;
      }
@@ -21,7 +21,7 @@
       }
       .gnb_button button{  
         width: 100%; height: 100%;
-        background-image: url("../../../img/menu/menu_icon.png");
+        background-image: url("../../../../img/menu/menu_icon.png");
         background-repeat: no-repeat; background-position: 50% 50%;
       }
     .gnb_area{ display: none;
@@ -35,32 +35,29 @@
       .gnb_sub_menu>li> a{width: 100%; height: 100%; margin-top: 10px;}
       .gnb_close{position: absolute; top:20px; right: 83.3333333333vw; z-index: 1600; width: 30px; height: 30px; }
       .gnb_close button{width: 100%; height: 100%; 
-        background-image: url("../../../img/menu/close_icon.png"); background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;} 
+        background-image: url("../../../../img/menu/close_icon.png"); background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;} 
   /*//headBox-------------------------------------------------  */
   #viewBox{position: relative; width: 100%; height: 200px; background-color: #fef;}
     .view_area{width: 100%; height: 100%; overflow: hidden;}
-  
-    .view_indicator{ 
-      position: absolute; left: 50%; bottom: 20px; z-index: 1000; transform: translateX(-50%); 
-      width: 100px; height: 20px;
+    .view_indi_area{ position: absolute; right: 10%; bottom: 20px; z-index: 1000; 
+      width: 160px; height: 40px; text-align: center; border-radius: 20px;background-color: rgba(85,85,85,0.7);}
+    .view_indicator{ width: 80%; height: 100%;margin: auto; }
+    .view_indicator li{ float: left;
+      width: 20px; height: 20px; border-radius: 100%;
+      margin-left: 20px; margin-top: 10px; background-color: #fff;
     }
-    .view_indicator li{
-      float: left; width: 20px; height: 100%; border-radius: 100%; 
-      margin-right: 20px; background-color: #fff;
-    }
-    .view_indicator li a{display: block; width: 100%; height: 100%;}
-    .view_indicator li.action {background-color: #0063b4;}
-    .view_indicator li:last-child{margin-right: 0;}
-
+    .view_indicator li.action{background-color: #0063b4;}
+    .view_indicator li:first-child{margin-left: 12px;}
+    .view_indicator li >a {width: 100%; height: 100%;}
     .view_area .view_con{width: 300%; height: 100%;}
     .view_con li{float: left; width: 33.333334%; height: 100%;}
     .view_con li > a{    
       display: block; width: 100%; height: 100%; 
       background-position: 50% 50%; background-repeat: no-repeat;
     }
-    .view_img_01 > a{background-image: url("../../../img/main/view/480_view_add_01.png");}
-    .view_img_02 > a{background-image: url("../../../img/main/view/480_view_add_02.png");}
-    .view_img_03 > a{background-image: url("../../../img/main/view/480_view_add_03.png");}
+    .view_img_01 > a{background-image: url("../../../../img/main/view/480_view_add_01.png");}
+    .view_img_02 > a{background-image: url("../../../../img/main/view/480_view_add_02.png");}
+    .view_img_03 > a{background-image: url("../../../../img/main/view/480_view_add_03.png");}
 
 /* //viewBox----------------------------------------- */
   #advantagesBox{width: 100%; max-width: 480px; height: 800px; padding: 50px 20px; box-sizing: border-box; background-color: #fff;}
@@ -72,7 +69,7 @@
     .next_btn{display: none;}
     .advantages_img_01{
       width:83.333333vw; height: 270px;  margin: auto; margin-top: 30px; margin-bottom: 86px;
-      background-image: url("../../../img/main/content/480_content_img_01.png");
+      background-image: url("../../../../img/main/content/480_content_img_01.png");
       background-repeat: no-repeat; background-position: 50% 50%; box-shadow: 2px 2px 5px 5px #989898;
     }
     .advantages_img_01 span{
@@ -82,7 +79,7 @@
     }
     .advantages_img_02{
       width:83.333333vw; height: 270px;  margin: auto; box-shadow: 2px 2px 5px 5px #989898;
-      background-image: url("../../../img/main/content/480_content_img_02.png");
+      background-image: url("../../../../img/main/content/480_content_img_02.png");
       background-repeat: no-repeat; background-position: 50% 50%;
     }
     .advantages_img_02 span{
@@ -99,7 +96,7 @@
     .video_area{width: 100%; height: 100%;}
     .video_con { position: relative;
       width: 79.166666vw; height: 200px; margin: auto; border: 1px solid #313131; box-sizing: border-box;
-      margin-top: 30px; background-image: url("../../../img/main/video/480_video_img.png");
+      margin-top: 30px; background-image: url("../../../../img/main/video/480_video_img.png");
       background-repeat: no-repeat; background-position: 50% 50%;
     }
     .video_text{display: none;}
@@ -109,11 +106,11 @@
     }
     .video_btn button{
       width: 100%; height: 100%;
-      background-image: url("../../../img/main/video/play_btn.png");
+      background-image: url("../../../../img/main/video/play_btn.png");
       background-repeat: no-repeat; background-position: 50% 50%;
     }
     .video_btn button:hover,
-    .video_btn button:focus{background-image: url("../../../img/main/video/play_btn_hover.png");}
+    .video_btn button:focus{background-image: url("../../../../img/main/video/play_btn_hover.png");}
 /* //promptionBox----------------------------------------------- */  
   #reviewBox{position: relative; padding-top: 40px; box-sizing: border-box; width: 100%; height: 300px; background-color: #fff;}
     .instagram_icon{
@@ -122,7 +119,7 @@
     }
     .instagram_icon a{      
       width: 100%; height: 100%;
-      background-image: url("../../../img/main/review/instagram_icon.png");
+      background-image: url("../../../../img/main/review/instagram_icon.png");
       background-repeat: no-repeat; background-position: 50% 50%;
     }
     .review_area{width: 100%; height: 100%;}
@@ -131,8 +128,8 @@
       float: left; width: 31.25vw; height: 150px; margin-left: 12.5vw; margin-top: 30px;
       background-repeat: no-repeat; background-position: 50% 50%;
     }
-    .review_area ul li:nth-child(1){background-image: url("../../../img/main/review/instagram_img_01.png");}
-    .review_area ul li:nth-child(2){background-image: url("../../../img/main/review/instagram_img_02.png");}
+    .review_area ul li:nth-child(1){background-image: url("../../../../img/main/review/instagram_img_01.png");}
+    .review_area ul li:nth-child(2){background-image: url("../../../../img/main/review/instagram_img_02.png");}
     .review_area ul li:nth-child(3){display: none;}
     .review_area ul li:nth-child(4){display: none;}
 /*//reveiwBox-----------------------------------------------------  */
@@ -143,7 +140,7 @@
       width: 14.5833333333vw; height: 40px; float: left; 
       background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
     }
-    .ect_area a:nth-child(2){margin-right: 10px; background-image: url("../../../img/foot/login.png");}
-    .ect_area a:nth-child(3){background-image: url("../../../img/foot/link_page.png");}
+    .ect_area a:nth-child(2){margin-right: 10px; background-image: url("../../../../img/foot/login.png");}
+    .ect_area a:nth-child(3){background-image: url("../../../../img/foot/link_page.png");}
     .foot_text{position: absolute; top: 70%; left: 50%;  transform: translateX(-50%); width: 47.916666vw; height: 20px;}
 }

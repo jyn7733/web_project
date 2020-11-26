@@ -30,7 +30,7 @@
       wrap.removeClass('wrap_dark');
     });
   }else{
-    gnbMainMenuLi.on('click',['a'],function(e){
+    gnbMainMenuLi.on('mouseenter',function(e){
       e.preventDefault();
       var it = $(this);
       var itI = it.index();
@@ -49,7 +49,8 @@ var viewBox = $('#viewBox');
 var viewArea = viewBox.children('.view_area');
 var viewCon = viewArea.children('.view_con');
 var viewLi = viewCon.children('li');
-var viewIndi = viewArea.children('.view_indicator');
+var viewIndiArea = viewArea.children('.view_indi_area')
+var viewIndi = viewIndiArea.children('.view_indicator');
 var viewIndiLi = viewIndi.children('li');
 
 var timed = 3000;
@@ -102,7 +103,7 @@ var StopSlide = function(){
 //   Start();
 // });
 
-//위의 처리 내용을 배열화하여 처리
+//위의 처리 내용을 객체화 하여 처리
 viewBox.on({
   'mouseenter': StopSlide,
   'mouseleave': Start
@@ -124,7 +125,6 @@ var selectLiN = function(){
   console.log( nn);
   return nn;
 };
-
 aConLi.hide();
 aConLi.eq(selN).show().addClass('action');
 var permission = true;
@@ -158,8 +158,6 @@ aConNextBtn.on('click',function(e){
   //     aConLi.eq(0).removeClass('hide');
   //   }
   // })
-});
-
-
+  });
 
 })(jQuery); 
