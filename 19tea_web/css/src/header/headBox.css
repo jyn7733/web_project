@@ -1,0 +1,126 @@
+/* headBox.css */
+
+/* mobile */
+@media screen and (min-width:280px) and (max-width:480px){
+  #wrap{position: relative;}
+  #wrap.wrap_dark::before{content: " "; display: block; position: absolute; top: 0; left: 0; z-index: 1000;
+     width: 100%; height: 2000px; background-color: rgba(90, 90, 90, 0.6);}
+
+  #headBox{ width: 100%; height: 100%; padding: 20px; box-sizing: border-box; background-color: #fff;}
+    h1 {float: left; width: 150px; height: 60px; margin-left: 20px;}
+    h1 a{
+      display: block; width: 100%; height: 100%;
+      background-image: url("../../../../img/logo/logo_480.png");
+      background-repeat: no-repeat; background-position: 50% 50%;
+      background-size: contain;
+     }
+     #gnbBox{
+       float: right; margin-top: 20px;
+       width: 40px; height: 40px;
+      }
+      .gnb_button{
+        width: 100%; height: 100%;
+      }
+      .gnb_button button{  
+        width: 100%; height: 100%;
+        background-image: url("../../../../img/menu/menu_icon.png");
+        background-repeat: no-repeat; background-position: 50% 50%;
+      }
+    .gnb_area{ display: none;
+      position: absolute; right: 0; top: 0; z-index: 1500; padding: 30px; box-sizing: border-box;
+      width: 83.3333333333vw; height:100%; background-color: #02396d;}
+      .gnb_main_menu{width: 58.333333vw; height: auto; min-height: 500px; color:#fff;}
+      .gnb_main_menu>li{width: 100%; height: auto; font-size: 1.25rem; margin-bottom: 20px;}
+      .gnb_main_menu>li> a{width: 100%; height: 30px; border-bottom:  2px solid #fff;}
+      .gnb_sub_menu{width: 100%; height: auto; margin-bottom: 30px; }
+      .gnb_sub_menu>li{width: 100px; height: 20px; margin-bottom: 10px;}
+      .gnb_sub_menu>li> a{width: 100%; height: 100%; margin-top: 10px;}
+      .gnb_close{position: absolute; top:20px; right: 83.3333333333vw; z-index: 1600; width: 30px; height: 30px; }
+      .gnb_close button{width: 100%; height: 100%; 
+        background-image: url("../../../../img/menu/close_icon.png"); background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;} 
+  }
+
+  /* 481부터 1024(tablet) */
+  @media screen and (min-width:481px) and (max-width:1024px){
+    #headBox{position: relative; z-index: 1000; width: 100%; height: 200px; padding-top: 50px; box-sizing: border-box; background-color: #fff;}
+    h1 {float: left; width: 200px; height: 80px; margin-left: 40px;}
+    h1 a{
+      display: block; width: 100%; height: 100%;
+      background-image: url("../../../../img/logo/logo_big.png");
+      background-repeat: no-repeat; background-position: 50% 50%;
+      background-size: contain;
+     }
+    #gnbBox{float: right; width: 570px; height: 50px; margin: 20px 96px 0 0;}
+    .gnb_close{display: none;}
+    .gnb_area{width: 100%; height: 100%;}
+    .gnb_main_menu{float: left; width: 540px; height: 100%;}
+    .gnb_main_menu>li{
+      float: left; width: 120px; height: 100%; 
+      text-align: center; font-weight: bold; font-size: 20px; margin-right: 20px;
+    }
+    .gnb_main_menu>li:last-of-type{margin-right: 0;}
+    .gnb_main_menu>li.action a{color: #02396d;}
+    .gnb_sub_menu{display: none; width: 100%; height: auto; min-height: 100px; margin-top: 2px; border: 2px solid #989898;
+      box-sizing: border-box; background-color: #fff;  }
+    .gnb_sub_menu>li{width: 100px; height: 20px; margin-bottom: 10px;}
+    .gnb_sub_menu>li>a{
+      width: 80%; height: 100%; font-size: 16px; text-align: center; margin-top: 10px; margin-left: 20%;
+    }
+  }
+
+  /* pc pull */
+  @media screen and (min-width:1025px) and (max-width:1440px){
+    #headBox{position: relative; z-index: 1000; padding: 50px; box-sizing: border-box; width: 100%; height: 200px; background-color: #fff;}
+    h1 {float: left; width: 200px; height: 80px;}
+      h1 a{
+        display: block; width: 100%; height: 100%;
+        background-image: url("../../../../img/logo/logo_big.png");
+        background-repeat: no-repeat; background-position: 50% 50%;
+        background-size: contain;
+      }
+      #gnbBox{float: right; width: 570px; height: 50px; margin-top: 50px;}
+      .gnb_close{display: none;}
+      .gnb_area{width: 100%; height: 100%;}
+      .gnb_main_menu{float: left; width: 540px; height: 100%;}
+      .gnb_main_menu>li{
+        float: left; width: 120px; height: 100%; 
+        text-align: center; font-weight: bold; font-size: 20px; margin-right: 20px;
+      }
+      .gnb_main_menu>li:last-of-type{margin-right: 0;}
+      .gnb_main_menu>li.action a{color: #02396d;}
+      .gnb_sub_menu{display: none; width: 100%; height: auto; min-height: 100px; margin-top: 2px; border: 2px solid #989898;
+        box-sizing: border-box; background-color: #fff;  }
+      .gnb_sub_menu>li{width: 100px; height: 20px; margin-bottom: 10px;}
+      .gnb_sub_menu>li>a{
+        width: 80%; height: 100%; font-size: 16px; text-align: center; margin-top: 10px; margin-left: 20%;
+      }  
+  }
+
+  /* pc */
+  @media screen and (min-width:1441px){
+    .head_area{width: 100%; height: 200px; background-color: #fff;}
+    #headBox{position: relative; z-index: 1000; width: 100%; max-width: 1440px; height: 200px; padding: 50px; box-sizing: border-box; margin: auto; background-color: #fff;}
+      h1 {float: left; width: 200px; height: 80px;}
+      h1 a{
+        display: block; width: 100%; height: 100%;
+        background-image: url("../../../../img/logo/logo_big.png");
+        background-repeat: no-repeat; background-position: 50% 50%;
+        background-size: contain;
+      }
+      #gnbBox{float: right; width: 570px; height: 50px; margin-top: 50px; margin-right: 100px;}
+      .gnb_close{display: none;}
+      .gnb_area{width: 100%; height: 100%;}
+      .gnb_main_menu{float: left; width: 540px; height: 100%;}
+      .gnb_main_menu>li{
+        float: left; width: 120px; height: 100%; 
+        text-align: center; font-weight: bold; font-size: 20px; margin-right: 20px;
+      }
+      .gnb_main_menu>li:last-of-type{margin-right: 0;}
+      .gnb_main_menu>li.action a{color: #02396d;}
+      .gnb_sub_menu{display: none; width: 100%; height: auto; min-height: 100px; margin-top: 2px; border: 2px solid #989898;
+        box-sizing: border-box; background-color: #fff;  }
+      .gnb_sub_menu>li{width: 100px; height: 20px; margin-bottom: 10px;}
+      .gnb_sub_menu>li>a{
+        width: 80%; height: 100%; font-size: 16px; text-align: center; margin-top: 10px; margin-left: 20%;
+      }  
+  }

@@ -1,95 +1,6 @@
-/* 480px.css */
-@media screen and (min-width:280px) and (max-width:480px){
-  #wrap{position: relative;}
-  #wrap.wrap_dark::before{content: " "; display: block; position: absolute; top: 0; left: 0; z-index: 1000;
-     width: 100%; height: 2000px; background-color: rgba(90, 90, 90, 0.6);}
 
-  #headBox{ width: 100%; height: 100%; padding: 20px; box-sizing: border-box; background-color: #fff;}
-    h1 {float: left; width: 150px; height: 60px; margin-left: 20px;}
-    h1 a{
-      display: block; width: 100%; height: 100%;
-      background-image: url("../../../../img/logo/logo_480.png");
-      background-repeat: no-repeat; background-position: 50% 50%;
-      background-size: contain;
-     }
-     #gnbBox{
-       float: right; margin-top: 20px;
-       width: 40px; height: 40px;
-      }
-      .gnb_button{
-        width: 100%; height: 100%;
-      }
-      .gnb_button button{  
-        width: 100%; height: 100%;
-        background-image: url("../../../../img/menu/menu_icon.png");
-        background-repeat: no-repeat; background-position: 50% 50%;
-      }
-    .gnb_area{ display: none;
-      position: absolute; right: 0; top: 0; z-index: 1500; padding: 30px; box-sizing: border-box;
-      width: 83.3333333333vw; height:100%; background-color: #02396d;}
-      .gnb_main_menu{width: 58.333333vw; height: auto; min-height: 500px; color:#fff;}
-      .gnb_main_menu>li{width: 100%; height: auto; font-size: 1.25rem; margin-bottom: 20px;}
-      .gnb_main_menu>li> a{width: 100%; height: 30px; border-bottom:  2px solid #fff;}
-      .gnb_sub_menu{width: 100%; height: auto; margin-bottom: 30px; }
-      .gnb_sub_menu>li{width: 100px; height: 20px; margin-bottom: 10px;}
-      .gnb_sub_menu>li> a{width: 100%; height: 100%; margin-top: 10px;}
-      .gnb_close{position: absolute; top:20px; right: 83.3333333333vw; z-index: 1600; width: 30px; height: 30px; }
-      .gnb_close button{width: 100%; height: 100%; 
-        background-image: url("../../../../img/menu/close_icon.png"); background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;} 
-  /*//headBox-------------------------------------------------  */
-  #viewBox{position: relative; width: 100%; height: 200px; background-color: #fef;}
-    .view_area{width: 100%; height: 100%; overflow: hidden;}
-    .view_indi_area{ position: absolute; right: 10%; bottom: 20px; z-index: 1000; 
-      width: 160px; height: 40px; text-align: center; border-radius: 20px;background-color: rgba(85,85,85,0.7);}
-    .view_indicator{ width: 80%; height: 100%;margin: auto; }
-    .view_indicator li{ float: left;
-      width: 20px; height: 20px; border-radius: 100%;
-      margin-left: 20px; margin-top: 10px; background-color: #fff;
-    }
-    .view_indicator li.action{background-color: #0063b4;}
-    .view_indicator li:first-child{margin-left: 12px;}
-    .view_indicator li >a {width: 100%; height: 100%;}
-    .view_area .view_con{width: 300%; height: 100%;}
-    .view_con li{float: left; width: 33.333334%; height: 100%;}
-    .view_con li > a{    
-      display: block; width: 100%; height: 100%; 
-      background-position: 50% 50%; background-repeat: no-repeat;
-    }
-    .view_img_01 > a{background-image: url("../../../../img/main/view/480_view_add_01.png");}
-    .view_img_02 > a{background-image: url("../../../../img/main/view/480_view_add_02.png");}
-    .view_img_03 > a{background-image: url("../../../../img/main/view/480_view_add_03.png");}
-
-/* //viewBox----------------------------------------- */
-  #advantagesBox{width: 100%; max-width: 480px; height: 800px; padding: 50px 20px; box-sizing: border-box; background-color: #fff;}
-    #advantagesBox h2{
-      width: 236px; height: 60px; color: #02396d; 
-      font-size: 30px; font-weight: bold; margin: auto; text-align: center;
-    } 
-    #advantagesBox ul{width: 100%; height: 100%;}
-    .next_btn{display: none;}
-    .advantages_img_01{
-      width:83.333333vw; height: 270px;  margin: auto; margin-top: 30px; margin-bottom: 86px;
-      background-image: url("../../../../img/main/content/480_content_img_01.png");
-      background-repeat: no-repeat; background-position: 50% 50%; box-shadow: 2px 2px 5px 5px #989898;
-    }
-    .advantages_img_01 span{
-      display: block; position: relative; top: 210px; width: 100%; height: 60px; 
-      color: #fff; font-size: 20px; font-weight: bold; text-align: center; line-height: 60px;
-      background-color: rgba(103, 103, 103, 0.7);
-    }
-    .advantages_img_02{
-      width:83.333333vw; height: 270px;  margin: auto; box-shadow: 2px 2px 5px 5px #989898;
-      background-image: url("../../../../img/main/content/480_content_img_02.png");
-      background-repeat: no-repeat; background-position: 50% 50%;
-    }
-    .advantages_img_02 span{
-      display: block; position: relative; top: 210px; width: 100%; height: 60px;
-      color: #fff; font-size: 20px; font-weight: bold; text-align: center; line-height: 60px;
-      background-color: rgba(103, 103, 103, 0.7);
-    }
-/* //advantagesBox------------------------------------------------ */
-  #promptionBox{ width: 100%; height: 400px; padding-top: 40px; background-color: #fff;}
-    #promptionBox h2{
+  #promotionBox{ width: 100%; height: 400px; padding-top: 40px; background-color: #fff;}
+    #promotionBox h2{
     width: 236px; height: 60px; color: #02396d; 
     font-size: 30px; font-weight: bold; margin: auto; text-align: center;
   } 
@@ -136,6 +47,7 @@
   #footBox{position: relative; width: 100%; height: 200px; padding: 40px 10px; box-sizing: border-box; color:#989898; background-color: #313131;}
     #footBox address{float: left; width: 47.916666vw; height: 108px; font-size: 12px;}
     .ect_area{float: right; width: 33.75vw; height: 120px;}
+    .ect_area p {display: inline-block; margin-bottom: 20px;}
     .ect_area a{
       width: 14.5833333333vw; height: 40px; float: left; 
       background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
@@ -143,4 +55,3 @@
     .ect_area a:nth-child(2){margin-right: 10px; background-image: url("../../../../img/foot/login.png");}
     .ect_area a:nth-child(3){background-image: url("../../../../img/foot/link_page.png");}
     .foot_text{position: absolute; top: 70%; left: 50%;  transform: translateX(-50%); width: 47.916666vw; height: 20px;}
-}

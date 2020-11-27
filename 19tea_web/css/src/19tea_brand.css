@@ -1,0 +1,102 @@
+/* 19tea_brand.css */
+
+/* 공통 */
+.head_area{width: 100%; height: 200px; background-color: #fff;}
+#wrap{width: 100%; max-width: 1920px; height: auto; min-height: 2000px; background-color: #ccc;}
+#headBox{position: relative; z-index: 1000; width: 100%; max-width: 1440px; height: 200px; 
+  padding: 50px; box-sizing: border-box; margin: auto; background-color: #fff;}
+h1 {float: left; width: 200px; height: 80px;}
+h1 a{
+  display: block; width: 100%; height: 100%;
+  background-image: url("../../../../img/logo/logo_big.png");
+  background-repeat: no-repeat; background-position: 50% 50%;
+  background-size: contain;
+}
+#gnbBox{float: right; width: 570px; height: 50px; margin-top: 50px; margin-right: 100px;}
+.gnb_close{display: none;}
+.gnb_area{width: 100%; height: 100%;}
+.gnb_main_menu{float: left; width: 540px; height: 100%;}
+.gnb_main_menu>li{
+  float: left; width: 120px; height: 100%; 
+  text-align: center; font-weight: bold; font-size: 20px; margin-right: 20px;
+}
+.gnb_main_menu>li:last-of-type{margin-right: 0;}
+.gnb_main_menu>li.action a{color: #02396d;}
+.gnb_sub_menu{display: none; width: 100%; height: auto; min-height: 100px; margin-top: 2px; border: 2px solid #989898;
+  box-sizing: border-box; background-color: #fff;  }
+.gnb_sub_menu>li{width: 100px; height: 20px; margin-bottom: 10px;}
+.gnb_sub_menu>li>a{
+  width: 80%; height: 100%; font-size: 16px; text-align: center; margin-top: 10px; margin-left: 20%;
+}   
+/* h2공통 */
+h2{
+  width: 236px; height: 100px; color: #fff; line-height: 100px;
+  font-size: 30px; font-weight: bold; margin: auto; text-align: center;
+} 
+/* introductionBox---------------------------- */
+#introductionBox{width: 100%; height: 1000px; /*padding-top:50px ; box-sizing: border-box; */background-color: #fff;}
+#introductionBox > h2{
+  width: 100%; height: 200px; color: #fff; 
+  font-size: 30px; font-weight: bold; margin: auto; text-align: center; line-height: 200px;
+  background-image: url("../../img/brand/introduction/brand_title_bg_dark.png");
+  background-repeat: no-repeat; background-position: 50% 50%;
+} 
+  .introduction_area{position: relative; width: 51.6666666667vw; max-width: 996px; height: 500px; margin: auto; margin-top: 100px;} 
+  .introduction_con{width: 46.875vw; max-width: 900px; height: 100%; box-shadow: 2px 2px 5px 5px #989898;
+    box-sizing: border-box; padding:0.5rem;}
+  .introduction_con ul{position: relative; width: 100%; height: 100%;}
+  .introduction_con ul li{
+    position: absolute; z-index: 50;
+    width: 100%; height: 100%; background-size: cover;
+    background-repeat: no-repeat; background-position: 50% 50%;
+  }
+  .introduction_con ul li span{
+    display: block; position: absolute; left: 0; bottom: 0; width: 100%; height:auto; 
+    color: #fff; font-size: 20px; font-weight: bold; text-align: center; 
+    line-height:1.2; padding:1rem 0;
+     /* background-color: rgba(103, 103, 103, 0.7); */
+     background-color: rgba(51, 51, 51, 0.8);
+  }
+  .introduction_con li.action {z-index: 100;}
+
+  .next_btn{
+    /* position: absolute; top: 50%; right: 100px; z-index: 100; */
+    float: right; width: 4.79166666667vw; max-width: 96px; height: 100%;
+  }
+  .next_btn button{width: 38px; height: 56px; margin-left: 2.08333333333vw; margin-top: 188px;
+    background-image: url("../../img/brand/introduction/incator_icon.png");
+    background-repeat: no-repeat; background-position: 50% 50%;
+  }
+
+  .introduction_img_01{
+    background-image: url("../../img/brand/introduction/big_content_img_01.png");
+  }
+
+  .introduction_img_02{
+    background-image: url("../../img/brand/introduction/big_content_img_02.png");
+  }
+/* advantageBox---------------------------- */
+#advantageBox{
+  width: 100%; height: auto; min-height: 1100px;
+  background-image: url("../../img/brand/advantage/advatage_bg_img.png"); 
+  background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;
+}
+
+/* footBox--------------------------------- */
+#footBox{position: relative; width: 100%; height: 200px; padding: 40px 120px; box-sizing: border-box; color:#989898; background-color: #313131;}
+  #footBox address{float: left; width: 11.979166vw; height: 108px;}
+  .ect_area{float: right; width: 8.4375vw; height: 120px;}
+  .ect_area p {display: inline-block; margin-bottom: 20px;}
+  .ect_area a{
+    width: 3.64583333333vw; height: 40px; float: left; 
+    background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
+  }
+  .ect_area a:nth-child(2){margin-right: 10px; background-image: url("../../../../img/foot/login.png");}
+  .ect_area a:nth-child(3){background-image: url("../../../../img/foot/link_page.png");}
+  .foot_text{position: absolute; top: 70%; left: 50%;  transform: translateX(-50%); width: 11.979166vw; height: 20px; }
+
+/*media start  */
+@media screen and (min-width:280px) and (max-width:480px){}
+@media screen and (min-width:481px) and (max-width:1024px){}
+@media screen and (min-width:1025px) and (max-width:1440px){}
+@media screen and (min-width:1441px){}

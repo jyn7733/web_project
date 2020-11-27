@@ -5,7 +5,16 @@
 @import url("../main/19tea_main_1440/19tea_main_1440.css");
 @import url("../main/19tea_main_1920/19tea_main_1920.css");
 
+
+@import url("../../src/header/headBox.css");
+@import url("../../src/main_view/viewBox.css");
+@import url("../../src/main_advantage/advantageBox.css");
+@import url("../../src/main_promotion/promotionBox.css");
+@import url("../../src/main_review/review.css");
+@import url("../../src/footer/foot.css");
+
+
 /* 공통내용*/
 #wrap{
-  width: 100%; max-width: 1920px; height: auto; min-height: 1000px; margin: auto; background-color: #ccc;
+  width: 100%; max-width: 1920px; height: auto; min-height: 1000px; margin: auto;
 }
