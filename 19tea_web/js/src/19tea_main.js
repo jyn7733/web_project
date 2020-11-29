@@ -62,20 +62,18 @@ viewIndiLi.children('a').on('click focus',function(e){
   viewIndiLi.eq(itI).addClass('action'); 
   if(e.type === 'focus'){
     viewCon.stop().animate({marginLeft : -100 * itI + '%'});
-  // setTimeout(function(){viewCon.stop().animate({marginLeft : -100 * itI + '%'})},timed); 
 
   }else if(e.type === 'click'){
     viewCon.stop().animate({marginLeft : -100 * itI + '%'});
-    // setTimeout(function(){viewCon.stop().animate({marginLeft : -100 * itI + '%'})},timed); 
   }
 })
 
-var i =0;
+var i =0;//임의의 변수
 var startInterval;
 var Start = function(){
-  startInterval = setInterval(function(){
-  i+=1;
-  viewIndiLi.eq(i).siblings().removeClass('action');
+  startInterval = setInterval(function(){//함수화 처리
+  i+=1;//임의의 변수에 1씩 더함
+  viewIndiLi.eq(i).siblings().removeClass('action');//임의의 변수 값에 해당하는 순서 li를 제외한 모든 li에 클래스 제거
   viewIndiLi.eq(i).addClass('action');  
   viewCon.stop().animate({marginLeft : -100 * i + '%'}); 
 
