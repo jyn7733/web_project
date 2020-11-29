@@ -1,17 +1,12 @@
 /* 19tea_main.css */
 
-@import url("../main/19tea_main_480/19tea_main_480.css");
-@import url("../main/19tea_main_1024/19tea_main_1024.css");
-@import url("../main/19tea_main_1440/19tea_main_1440.css");
-@import url("../main/19tea_main_1920/19tea_main_1920.css");
+@import url("../header/headBox.css");
+@import url("../main/main_view/viewBox.css");
+@import url("../main/main_advantage/advantageBox.css");
+@import url("../main/main_promotion/promotionBox.css");
+@import url("../main/main_review/");
+@import url("../footer/footer.css");
 
-
-@import url("../../src/header/headBox.css");
-@import url("../../src/main_view/viewBox.css");
-@import url("../../src/main_advantage/advantageBox.css");
-@import url("../../src/main_promotion/promotionBox.css");
-@import url("../../src/main_review/review.css");
-@import url("../../src/footer/foot.css");
 
 
 /* 공통내용*/
