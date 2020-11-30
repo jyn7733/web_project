@@ -22,7 +22,7 @@ hr{border-bottom: 1px solid #333;}
 
 a:hover, a:focus,
 button:hover,button:focus{ position: relative;
-z-index: 500; outline: 1px solid #444;}
+z-index: 500;}
 
 /* variable 지원여부 파악 */
 
