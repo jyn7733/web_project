@@ -18,7 +18,7 @@
     var moreBtn = more.children('button');
     var liEq;
 // ----------------------------------------------------------------
-    var moreFn = function(j){//함수화
+    var moreFn = function(j){//함수화 
       var k;
       //1번
       // if(j === undefined){
