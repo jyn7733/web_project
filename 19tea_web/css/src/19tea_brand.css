@@ -63,7 +63,8 @@ h2{
   .advantage_text_01{width: 100%; height: 120px; padding: 10px; box-sizing: border-box; background-color: #fbdae0;}
     .advantage_text_01 p{text-align: center; font-size: 20px;}
     .advantage_text_01 span{font-size: 24px; color:#0f3a6e; font-weight: bold;}
-  .advantage_con_area{position: relative; width: 742px; height: 536px; margin: auto; margin-top: 80px; }
+
+  .advantage_con_area{position: relative; width: 38.645833vw; height: 536px; margin: auto; margin-top: 80px; }
     .plus_btn{width: 20px; height: 20px;}
     .plus_btn button{
       width: 100%; height: 100%;
@@ -94,7 +95,7 @@ h2{
       background-image: url("../../img/brand/advantage/big_advantage_con_03.png"); background-repeat: no-repeat;
       background-position: 50% 50%;
     }
-  .advantage_text_02{width: 560px; height: 140px; border: 10px solid #fbdae0; box-sizing: border-box; margin: auto; margin-top: 50px;}
+  .advantage_text_02{width: 29.1666666vw; height: 140px; border: 10px solid #fbdae0; box-sizing: border-box; margin: auto; margin-top: 50px;}
   .advantage_text_02 p{font-size: 20px; text-align: center; font-weight: bold;}
   .advantage_text_02 span{color: #0f3a6e;}
 
@@ -102,7 +103,7 @@ h2{
 /*media start  */
 /* mobile */ 
 @media screen and (min-width:280px) and (max-width:480px){
-  #introductionBox{ width: 100%; max-width: 480px; height: 1000px; padding-top: 50px; box-sizing: border-box; background-color: #fff;}
+  #introductionBox{ width: 100%; max-width: 480px; height: 900px; padding-top: 50px; box-sizing: border-box; background-color: #fff;}
   #introductionBox > h2{
   width: 100%; height: 100px; color: #fff; 
   font-size: 30px; font-weight: bold; margin: auto; text-align: center; line-height: 100px;
@@ -129,14 +130,51 @@ h2{
    color: #fff; font-size: 20px; font-weight: bold; text-align: center;
    background-color: rgba(103, 103, 103, 0.7);
  }
+ /* advantageBox---------------------------- */
+#advantageBox{
+  width: 100%; height: auto; min-height: 800px;
+  background-image:none; 
+}
+  .advantage_con_area{position: relative; width: 83.3333333333vw; max-width: 280px; height: 290px; }
+    .plus_btn:nth-child(1){position: absolute; top:28px; left: 108px;}
+    .plus_btn:nth-child(2){position: absolute; top: 128px; right: 112px;}
+    .plus_btn:nth-child(3){position: absolute; top: 220px; left: 108px;}
+    .advantage_cup_img{
+      width: 176px; height: 278px; 
+      background-image: url("../../img/brand/advantage/480_cup_img.png");
+      background-repeat: no-repeat; background-position: 50% 50%;
+    }
+    .advantage_img{display: none; width: 100px; height: 100px;}
+    .advantage_img_01{
+      position: absolute; top: 0; left: 0; 
+      background-image: url("../../img/brand/advantage/480_advantage_con_01.png"); background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .advantage_img_02{
+      position: absolute; top: 100px; right: 0; 
+      background-image: url("../../img/brand/advantage/480_advantage_con_02.png"); background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .advantage_img_03{
+      position: absolute; top: 190px; left: 0; 
+      background-image: url("../../img/brand/advantage/480_advantage_con_03.png"); background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  .advantage_text_02{width: 91.25vw; height: 140px;}
 }
 
-@media screen and (max-width:280px){
+@media screen and (min-width:280px) and (max-width: 424px){
   .introduction_con ul li span{ 
     display: block; position: relative; top: 180px; width: 100%; height: 60px; 
-   color: #fff; font-size: 14px; font-weight: bold; text-align: center;
+   color: #fff; font-size: 16px; font-weight: bold; text-align: center; letter-spacing: 0.2px; line-height: 16px; 
    background-color: rgba(103, 103, 103, 0.7);
  }
+ .advantage_text_01 p{font-size: 16px; line-height: 24px;}
+ .advantage_text_01 span{font-size: 16px; line-height: 24px;}
+
+ .advantage_text_02{width: 91.25vw; height: 160px; margin-top: 40px;}
+  .advantage_text_02 p{ font-size: 16px; line-height: 26px;}
+  .advantage_text_02 br{ display: none;}
 }
 /* tablet */
 @media screen and (min-width:481px) and (max-width:1024px){
@@ -178,6 +216,38 @@ h2{
   .introduction_img_02{
     background-image: url("../../img/brand/introduction/1024_content_img_02.png");
     }
+
+/* advantageBox---------------------------- */
+#advantageBox{
+  width: 100%; height: auto; min-height: 800px;
+  background-image:none; 
+}
+  .advantage_con_area{position: relative; width: 83.3333333333vw; max-width: 480px; height: 290px; }
+    .plus_btn:nth-child(1){position: absolute; top:28px; left: 108px;}
+    .plus_btn:nth-child(2){position: absolute; top: 128px; right: 112px;}
+    .plus_btn:nth-child(3){position: absolute; top: 220px; left: 108px;}
+    .advantage_cup_img{
+      width: 176px; height: 278px; 
+      background-image: url("../../img/brand/advantage/480_cup_img.png");
+      background-repeat: no-repeat; background-position: 50% 50%;
+    }
+    .advantage_img{display: none; width: 100px; height: 100px;}
+    .advantage_img_01{
+      position: absolute; top: 0; left: 0; 
+      background-image: url("../../img/brand/advantage/480_advantage_con_01.png"); background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .advantage_img_02{
+      position: absolute; top: 100px; right: 0; 
+      background-image: url("../../img/brand/advantage/480_advantage_con_02.png"); background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .advantage_img_03{
+      position: absolute; top: 190px; left: 0; 
+      background-image: url("../../img/brand/advantage/480_advantage_con_03.png"); background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  .advantage_text_02{width: 91.25vw; height: 140px;}
 }
 
 /* pc pull */

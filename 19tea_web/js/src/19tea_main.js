@@ -6,7 +6,7 @@
   var headBox = $('#headBox');
   var gnbBox = headBox.children('#gnbBox');
   var menuBtn = gnbBox.find('.gnb_button');
-  var gnbArea = gnbBox.find('.gnb_area')
+  var gnbArea = gnbBox.find('.gnb_area');
   var gnbCloes = gnbArea.find('button');
   var gnbMainMenu = gnbBox.find('.gnb_main_menu');
   var gnbMainMenuLi = gnbMainMenu.children('li');
@@ -20,7 +20,7 @@
     menuBtn.on('click',['button'],function(e){
       e.preventDefault();
       gnbArea.stop().fadeIn();
-      gnbArea.css({'position' : 'fixed'})
+      gnbArea.css({'position' : 'fixed'});
       wrap.addClass('wrap_dark');
     });
 
@@ -43,13 +43,13 @@
       gnbSubMenu.fadeOut();
       gnbMainMenuLi.removeClass('action');
     });
-  };
+  }
 //indicator slide banner
 var viewBox = $('#viewBox');
 var viewArea = viewBox.children('.view_area');
 var viewCon = viewArea.children('.view_con');
 var viewLi = viewCon.children('li');
-var viewIndiArea = viewArea.children('.view_indi_area')
+var viewIndiArea = viewArea.children('.view_indi_area');
 var viewIndi = viewIndiArea.children('.view_indicator');
 var viewIndiLi = viewIndi.children('li');
 
@@ -66,7 +66,7 @@ viewIndiLi.children('a').on('click focus',function(e){
   }else if(e.type === 'click'){
     viewCon.stop().animate({marginLeft : -100 * itI + '%'});
   }
-})
+});
 
 var i =0;//임의의 변수
 var startInterval;
@@ -84,7 +84,7 @@ var Start = function(){
     viewIndiLi.eq(i).addClass('action');   
   }
   },timed); 
-}
+};
 Start();
 
 var StopSlide = function(){
