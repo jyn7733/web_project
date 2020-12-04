@@ -1,0 +1,62 @@
+/* advantageBox_1024.css */
+
+
+  /*tablet  */
+  @media screen and (min-width:481px) and (max-width:1024px){
+    #advantagesBox{width: 100%; height: 600px; padding-top: 50px; height: 37.5rem; padding-top: 3.125rem; box-sizing: border-box; background-color: #fff;}
+       #advantagesBox h2{
+         width: 236px; height: 60px; width: 14.75rem; height: 3.75rem; color: #02396d; 
+         font-size: 30px; font-size: 1.875rem; font-weight: bold; margin: auto; text-align: center;
+       }
+       .advantages_area{ width: 66.2109375vw; height: 374px; height: 23.375rem; margin: auto;} 
+       .advantages_con{width: 58.59375vw; height: 100%; box-shadow: 2px 2px 5px 5px #989898;  box-shadow: 0.125rem 0.125rem 0.3125rem 0.3125rem #989898;
+         background-color: #fff; box-sizing: border-box; padding:0.5rem;}
+       .advantages_con ul{position: relative; width: 100%; height: 100%;}
+       .advantages_con ul li{
+         position: absolute; z-index: 50;
+         width: 100%; height: 100%; background-size: cover;
+         background-repeat: no-repeat; background-position: 50% 50%;
+       }
+   
+       .advantages_con ul li span{
+         display: block; position: absolute; left: 0; bottom: 0; width: 100%; height:auto; 
+         color: #fff; font-size: 20px; font-size: 1.25rem; font-weight: bold; text-align: center; 
+         line-height:1.2; padding:1rem 0;
+          /* background-color: rgba(103, 103, 103, 0.7); */
+          background-color: rgba(51, 51, 51, 0.8);
+       }
+       .advantages_con li.action {z-index: 100;}
+       .next_btn{
+         /* position: absolute; top: 50%; right: 100px; z-index: 100; */
+         float: right; width: 7.617813vw; height: 100%;
+       }
+       .next_btn button{width: 38px; height: 56px; margin-left: 30px; margin-top: 168px; width: 2.375rem; height: 3.5rem; margin-left: 1.875rem; margin-top: 10.5rem;
+         background-image: url("../../../../../img/main/content/incator_icon.png");
+         background-repeat: no-repeat; background-position: 50% 50%;
+       }
+   
+       .advantages_img_01{
+         position: absolute; z-index: 50;
+         /* width: 58.59375vw; height:374px;   */
+         /* width: 100%; height: 100%;  */
+         background-image: url("../../../../../img/main/content/1024_content_img_01.png");
+         /* background-repeat: no-repeat; background-position: 50% 50%; */
+       }
+       /* .advantages_img_01 span{
+         display: block; position: absolute; left: 0; bottom: 0; width: 100%; height:auto; 
+         color: #fff; font-size: 20px; font-weight: bold; text-align: center; line-height: 100px;
+         background-color: rgba(103, 103, 103, 0.7);
+       } */
+       .advantages_img_02{
+         /* position: absolute; z-index: 40; */
+         /* width: 58.59375vw; height:374px;   */
+         /* width: 100%; height: 100%;  */
+         background-image: url("../../../../../img/main/content/1024_content_img_02.png");
+         /* background-repeat: no-repeat; background-position: 50% 50%; */
+       }
+       /* .advantages_img_02 span{
+         display: block; width: 100%; height: 100px; margin-top: 275px;
+         color: #fff; font-size: 20px; font-weight: bold; text-align: center; line-height: 100px;
+         background-color: rgba(103, 103, 103, 0.7);
+       } */
+      }

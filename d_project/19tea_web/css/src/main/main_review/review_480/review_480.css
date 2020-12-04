@@ -1,0 +1,26 @@
+/* review_480.css */
+
+
+/* mobile */
+@media screen and (min-width:280) and (max-width:480px){
+  #reviewBox{position: relative; padding-top: 40px; padding-top: 2.5rem; box-sizing: border-box; width: 100%; height: 300px; height: 18.75rem; background-color: #fff;}
+    .instagram_icon{
+      position: absolute; top: 0; right: 50px; right: 3.125rem;
+      width: 40px; height: 40px; width: 2.5rem; height: 2.5rem;
+    }
+    .instagram_icon a{      
+      width: 100%; height: 100%;
+      background-image: url("../../../../../img/main/review/instagram_icon.png");
+      background-repeat: no-repeat; background-position: 50% 50%;
+    }
+    .review_area{width: 100%; height: 100%;}
+    .review_area ul{width: 100%; height: 100%;}
+    .review_area ul li{
+      float: left; width: 31.25vw; height: 150px; height: 9.375rem; margin-left: 12.5vw; margin-top: 30px;  margin-top: 1.875rem;
+      background-repeat: no-repeat; background-position: 50% 50%;
+    }
+    .review_area ul li:nth-child(1){background-image: url("../../../../../img/main/review/instagram_img_01.png");}
+    .review_area ul li:nth-child(2){background-image: url("../../../../../img/main/review/instagram_img_02.png");}
+    .review_area ul li:nth-child(3){display: none;}
+    .review_area ul li:nth-child(4){display: none;}
+}

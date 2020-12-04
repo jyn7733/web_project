@@ -1,0 +1,263 @@
+/* 19tea_brand.css */
+
+@import url("../src/header/headBox.css");
+@import url("../src/footer/footer.css");
+
+
+/* 공통 */
+#wrap{
+  width: 100%; max-width: 1920px; height: auto; min-height: 1000px; margin: auto;
+}
+h2{
+  width: 236px; height: 100px; color: #fff; line-height: 100px;
+  font-size: 30px; font-weight: bold; margin: auto; text-align: center;
+} 
+/* introductionBox---------------------------- */
+#introductionBox{width: 100%; height: 1000px; /*padding-top:50px ; box-sizing: border-box; */background-color: #fff;}
+#introductionBox > h2{
+  width: 100%; height: 200px; color: #fff; 
+  font-size: 30px; font-weight: bold; margin: auto; text-align: center; line-height: 200px;
+  background-image: url("../../img/brand/introduction/brand_title_bg_dark.png");
+  background-repeat: no-repeat; background-position: 50% 50%;
+} 
+  .introduction_area{width: 51.6666666667vw; max-width: 996px; height: 500px; margin: auto; margin-top: 100px;} 
+  .introduction_con{width: 46.875vw; max-width: 900px; height: 100%; box-shadow: 2px 2px 5px 5px #989898;
+    box-sizing: border-box; padding:0.5rem;}
+  .introduction_con ul{position: relative; width: 100%; height: 100%;}
+  .introduction_con ul li{
+    position: absolute; z-index: 50;
+    width: 100%; height: 100%; background-size: cover;
+    background-repeat: no-repeat; background-position: 50% 50%;
+  }
+  .introduction_con ul li span{
+    display: block; position: absolute; left: 0; bottom: 0; width: 100%; height:auto; 
+    color: #fff; font-size: 20px; font-weight: bold; text-align: center; 
+    line-height:1.2; padding:1rem 0;
+     /* background-color: rgba(103, 103, 103, 0.7); */
+     background-color: rgba(51, 51, 51, 0.8);
+  }
+  .introduction_con li.action {z-index: 100;}
+
+  .next_btn{
+    /* position: absolute; top: 50%; right: 100px; z-index: 100; */
+    float: right; width: 4.79166666667vw; max-width: 96px; height: 100%;
+  }
+  .next_btn button{width: 38px; height: 56px; margin-left: 2.08333333333vw; margin-top: 188px;
+    background-image: url("../../img/brand/introduction/incator_icon.png");
+    background-repeat: no-repeat; background-position: 50% 50%;
+  }
+
+  .introduction_img_01{
+    background-image: url("../../img/brand/introduction/big_content_img_01.png");
+  }
+
+  .introduction_img_02{
+    background-image: url("../../img/brand/introduction/big_content_img_02.png");
+  }
+/* advantageBox---------------------------- */
+#advantageBox{
+  width: 100%; height: auto; min-height: 1100px;
+  background-image: url("../../img/brand/advantage/advatage_bg_img.png"); 
+  background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;
+}
+  .advantage_text_01{width: 100%; height: 120px; padding: 10px; box-sizing: border-box; background-color: #fbdae0;}
+    .advantage_text_01 p{text-align: center; font-size: 20px;}
+    .advantage_text_01 span{font-size: 24px; color:#0f3a6e; font-weight: bold;}
+
+  .advantage_con_area{position: relative; width: 38.645833vw; height: 536px; margin: auto; margin-top: 80px; }
+    .plus_btn{width: 20px; height: 20px;}
+    .plus_btn button{
+      width: 100%; height: 100%;
+      background-image: url("../../img/brand/advantage/plus_icon.png");
+      background-repeat: no-repeat; background-position: 50% 50%;
+    }
+    .plus_btn:nth-child(1){position: absolute; top:62px; left: 220px;}
+    .plus_btn:nth-child(2){position: absolute; top: 226px; right: 252px;}
+    .plus_btn:nth-child(3){position: absolute; top: 382px; left: 220px;}
+    .advantage_cup_img{position: absolute; top: 0; left: 50%; transform: translate(-50%);
+      width: 294px; height: 464px; 
+      background-image: url("../../img/brand/advantage/big_cup_img.png");
+      background-repeat: no-repeat; background-position: 50% 50%;
+    }
+    .advantage_img{display: none; width: 200px; height: 200px;}
+    .advantage_img_01{
+      position: absolute; top: 40px; left: 0; 
+      background-image: url("../../img/brand/advantage/big_advantage_con_01.png"); background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .advantage_img_02{
+      position: absolute; top: 200px; right: 0; 
+      background-image: url("../../img/brand/advantage/big_advantage_con_02.png"); background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .advantage_img_03{
+      position: absolute; top: 334px; left: 0; 
+      background-image: url("../../img/brand/advantage/big_advantage_con_03.png"); background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  .advantage_text_02{width: 29.1666666vw; height: 140px; border: 10px solid #fbdae0; box-sizing: border-box; margin: auto; margin-top: 50px;}
+  .advantage_text_02 p{font-size: 20px; text-align: center; font-weight: bold;}
+  .advantage_text_02 span{color: #0f3a6e;}
+
+
+/*media start  */
+/* mobile */ 
+@media screen and (min-width:280px) and (max-width:480px){
+  #introductionBox{ width: 100%; max-width: 480px; height: 900px; padding-top: 50px; box-sizing: border-box; background-color: #fff;}
+  #introductionBox > h2{
+  width: 100%; height: 100px; color: #fff; 
+  font-size: 30px; font-weight: bold; margin: auto; text-align: center; line-height: 100px;
+  background-image: url("../../img/brand/introduction/brand_title_bg_dark.png");
+  background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;
+  } 
+  .introduction_area{position: static; width: 83.333333vw; height: 270px;}
+  .introduction_con{width: 100%; height: auto; min-height: 600px;  box-shadow:none; padding:0;} 
+  .introduction_con ul{width: 100%; height: auto;}
+  .introduction_con ul li{position: static; width: 100%; height: 270px;}
+  .next_btn{display: none;}
+  .introduction_img_01{position: static; box-shadow: 2px 2px 5px 5px #989898;
+    margin: auto; margin-top: 30px; margin-bottom: 86px;
+    background-image: url("../../img/brand/introduction/480_content_img_01.png");
+    background-repeat: no-repeat; background-position: 50% 50%;
+  }
+  .introduction_img_02{position: static;
+    margin: auto; box-shadow: 2px 2px 5px 5px #989898;
+    background-image: url("../../img/brand/introduction/480_content_img_02.png");
+    background-repeat: no-repeat; background-position: 50% 50%;
+  }
+  .introduction_con ul li span{ 
+    display: block; position: relative; top: 180px; width: 100%; height: 60px; 
+   color: #fff; font-size: 20px; font-weight: bold; text-align: center;
+   background-color: rgba(103, 103, 103, 0.7);
+ }
+ /* advantageBox---------------------------- */
+#advantageBox{
+  width: 100%; height: auto; min-height: 800px;
+  background-image:none; 
+}
+  .advantage_con_area{position: relative; width: 83.3333333333vw; max-width: 280px; height: 290px; }
+    .plus_btn:nth-child(1){position: absolute; top:28px; left: 40px;}
+    .plus_btn:nth-child(2){position: absolute; top: 128px; right: 50px;}
+    .plus_btn:nth-child(3){position: absolute; top: 220px; left: 40px;}
+    .advantage_cup_img{
+      width: 176px; height: 278px; 
+      background-image: url("../../img/brand/advantage/480_cup_img.png");
+      background-repeat: no-repeat; background-position: 50% 50%;
+    }
+    .advantage_img{display: none; width: 100px; height: 100px;}
+    .advantage_img_01{
+      position: absolute; top: 0; left: 0; 
+      background-image: url("../../img/brand/advantage/480_advantage_con_01.png"); background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .advantage_img_02{
+      position: absolute; top: 100px; right: 0; 
+      background-image: url("../../img/brand/advantage/480_advantage_con_02.png"); background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .advantage_img_03{
+      position: absolute; top: 190px; left: 0; 
+      background-image: url("../../img/brand/advantage/480_advantage_con_03.png"); background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  .advantage_text_02{width: 91.25vw; height: 140px;}
+}
+
+@media screen and (min-width:280px) and (max-width: 424px){
+  .introduction_con ul li span{ 
+    display: block; position: relative; top: 180px; width: 100%; height: 60px; 
+   color: #fff; font-size: 16px; font-weight: bold; text-align: center; letter-spacing: 0.2px; line-height: 16px; 
+   background-color: rgba(103, 103, 103, 0.7);
+ }
+ .advantage_text_01 p{font-size: 16px; line-height: 24px;}
+ .advantage_text_01 span{font-size: 16px; line-height: 24px;}
+
+ .advantage_text_02{width: 91.25vw; height: 160px; margin-top: 40px;}
+  .advantage_text_02 p{ font-size: 16px; line-height: 26px;}
+  .advantage_text_02 br{ display: none;}
+}
+/* tablet */
+@media screen and (min-width:481px) and (max-width:1024px){
+  #introductionBox{width: 100%; height: 800px; /*padding-top:50px ; box-sizing: border-box; */background-color: #fff;}
+  #introductionBox > h2{
+    width: 100%; height: 200px; color: #fff; 
+    font-size: 30px; font-weight: bold; margin: auto; text-align: center; line-height: 200px;
+    background-image: url("../../img/brand/introduction/brand_title_bg_dark.png");
+    background-repeat: no-repeat; background-position: 50% 50%;
+  } 
+  .introduction_area{width: 66.2109375vw; height: 374px; margin: auto; margin-top: 100px;} 
+  .introduction_con{width: 58.59375vw; height: 100%; box-shadow: 2px 2px 5px 5px #989898;
+    background-color: #fff; box-sizing: border-box; padding:0.5rem;}
+  .introduction_con ul{position: relative; width: 100%; height: 100%;}
+  .introduction_con ul li{
+    position: absolute; z-index: 50;
+    width: 100%; height: 100%; background-size: cover;
+    background-repeat: no-repeat; background-position: 50% 50%;
+  }
+  .introduction_con ul li span{
+    display: block; position: absolute; left: 0; bottom: 0; width: 100%; height:auto; 
+    color: #fff; font-size: 20px; font-weight: bold; text-align: center; 
+    line-height:1.2; padding:1rem 0;
+    background-color: rgba(51, 51, 51, 0.8);
+  }
+  .introduction_con li.action {z-index: 100;}
+  .next_btn{
+    /* position: absolute; top: 50%; right: 100px; z-index: 100; */
+    float: right; width: 7.617813vw; height: 100%;
+    }
+  .next_btn button{width: 38px; height: 56px; margin-left: 30px; margin-top: 168px;
+    background-image: url("../../../../../img/main/content/incator_icon.png");
+    background-repeat: no-repeat; background-position: 50% 50%;}
+
+  .introduction_img_01{
+    position: absolute; z-index: 50;
+    background-image: url("../../img/brand/introduction/1024_content_img_01.png");
+    }
+  .introduction_img_02{
+    background-image: url("../../img/brand/introduction/1024_content_img_02.png");
+    }
+
+/* advantageBox---------------------------- */
+#advantageBox{
+  width: 100%; height: auto; min-height: 800px;
+  background-image:none; 
+}
+  .advantage_con_area{position: relative; width: 83.3333333333vw; max-width: 480px; height: 290px; }
+    .plus_btn:nth-child(1){position: absolute; top:28px; left: 108px;}
+    .plus_btn:nth-child(2){position: absolute; top: 128px; right: 112px;}
+    .plus_btn:nth-child(3){position: absolute; top: 220px; left: 108px;}
+    .advantage_cup_img{
+      width: 176px; height: 278px; 
+      background-image: url("../../img/brand/advantage/480_cup_img.png");
+      background-repeat: no-repeat; background-position: 50% 50%;
+    }
+    .advantage_img{display: none; width: 100px; height: 100px;}
+    .advantage_img_01{
+      position: absolute; top: 0; left: 0; 
+      background-image: url("../../img/brand/advantage/480_advantage_con_01.png"); background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .advantage_img_02{
+      position: absolute; top: 100px; right: 0; 
+      background-image: url("../../img/brand/advantage/480_advantage_con_02.png"); background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .advantage_img_03{
+      position: absolute; top: 190px; left: 0; 
+      background-image: url("../../img/brand/advantage/480_advantage_con_03.png"); background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  .advantage_text_02{width: 91.25vw; height: 140px;}
+}
+
+/* pc pull */
+@media screen and (min-width:1025px) and (max-width:1440px){ 
+    .introduction_area{width: 68.8888888889vw;} 
+    .introduction_con{width:62.5vw;}
+    .next_btn{
+      /* position: absolute; top: 50%; right: 100px; z-index: 100; */
+      float: right; width: 6.38888888889vw; height: 100%;
+    }
+    .next_btn button{margin-left: 2.08333333333vw;}
+}
+

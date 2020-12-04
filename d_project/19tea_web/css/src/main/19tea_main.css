@@ -1,0 +1,17 @@
+/* 19tea_main.css */
+
+
+
+@import url("../header/headBox.css");
+@import url("../main/main_view/viewBox.css");
+@import url("../main/main_advantage/advantageBox.css");
+@import url("../main/main_promotion/promotionBox.css");
+@import url("../main/main_review/review.css");
+@import url("../footer/footer.css");
+
+
+
+/* 공통내용*/
+#wrap{
+  width: 100%; max-width: 1920px; max-width: 120rem; height: auto; min-height: 1000px; min-height: 62.5rem; margin: auto;
+}
