@@ -1,0 +1,20 @@
+/* ex_11 */
+
+#wrap{
+  position: relative;
+  width: 90%; min-width: 60rem;
+  height: 600px; margin: 2rem auto;
+  background-color: #ddd;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+}
+
+.character{
+  display: none;
+  position: absolute; 
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto; cursor: pointer;
+  width: 150px; height: 150px;
+  background-color: #aff;
+}
+.character img{width: 100%; height: auto;}

@@ -27,7 +27,7 @@
     var indiArea = indiCon.children('ul');
     
     //기본 세팅
-    var myViewLen = 70;  //한번에 보일 갯수
+    var myViewLen = 20;  //한번에 보일 갯수
 
     //인디케이터 생성하기
     var indiLen = Math.ceil(dataFile.length / myViewLen);
@@ -38,6 +38,40 @@
       indiLi = indiArea.children('li').eq(indiN);
       indiLi.find('a').text(indiN + 1)
     }
+
+    // 인디케이터 보일 갯수 조정
+    var indiViewLen = 5;// 인디케이터의 보이는 갯수
+    var iv = 0;//임의의 변수
+    var indiLi = indiArea.children('li');//li 선언 (불러옴)
+    var memoryN;//임의의 변수\\임시로 기억하는 역할\\ 만든 변수로 보이는 indiLi의 마지막 순서값을 기억시킴
+
+    for(; iv < indiLen; iv+=1){//임의의 변수가 인디케이터 li수까지 더해라
+      if(iv < indiViewLen){//임의의 변수가 5보다 작다면
+        memoryN = iv+1; //memoryN 에 iv + 1 즉 5를 집어넣음
+        continue;//5가 될 따까지 계속해라. 1~4까지는 아무것도 하지 말고 넘겨라.
+      }else{
+        indiLi.eq(iv).hide();//아니면 iv에 해당하는 인디 li들을 숨겨라.(6~갯수만큼)
+      }
+    };
+
+    var nBtn = indiCon.find('.next_notice');
+    var pBtn = indiCon.find('.prev_notice');
+
+    nBtn.on('click',function(e){//버튼을 클릭시
+      e.preventDefault();//해당 버튼의 기능을 리셋
+      var nbn = memoryN;//nbn에 memoryN 값을 즉 5를 집어넣어라 
+      indiLi.hide();//인디 li를 숨겨라
+      for(; nbn < memoryN + indiViewLen; nbn += 1){//nbn이  memoryN + indiViewLen; 즉 5+5까지 1씩 증가
+        indiLi.eq(nbn).show();//해당 10까지(5번부터 10번의 순서까지) 인디 li들을 보여줘라.
+      }
+      memoryN = nbn; //memoryN에 nbn 값 즉 10을 넣어라
+     })//끝
+
+    pBtn.on('click',function(e){
+      e.preventDefault();
+      
+    })
+
     // 내용 넣기
     var reSetting = function(n){
       // var i=0;
